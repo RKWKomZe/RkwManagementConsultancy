@@ -1,0 +1,43 @@
+<f:comment>
+    <f:flashMessages />
+</f:comment>
+
+<f:render partial="FormErrors" arguments="{object:SupportRequest}" />
+
+<div class="form-container">
+
+    <f:render partial="SupportRequest/FormHeader" arguments="{_all}" />
+
+    <f:form class="form-fields" action="create" name="newSupportRequest" object="{newSupportRequest}" >
+
+        <f:form.hidden property="supportProgramme" value="{supportProgramme}" />
+
+        <h3>{supportProgramme.title}</h3>
+        <p class="first-letter">
+            <f:comment><!-- because we have an RTE field. Maybe we could have some lists or what ever --></f:comment>
+            <f:if condition="{supportProgramme.description}">
+                <f:then>
+                    <f:format.raw>{supportProgramme.description}</f:format.raw>
+                </f:then>
+                <f:else>
+                    <f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.noDescription" />
+                </f:else>
+            </f:if>
+        </p>
+
+        <f:render partial="SupportRequest/RequestFormParts/01-applicant" arguments="{_all}" />
+
+        <f:render partial="SupportRequest/RequestFormParts/02-consulting" arguments="{_all}" />
+
+        <f:render partial="SupportRequest/RequestFormParts/03-consultant" arguments="{_all}" />
+
+        <f:render partial="SupportRequest/RequestFormParts/04-closingFields" arguments="{_all}" />
+
+        <f:form.button class="button">
+            <f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.send" />
+        </f:form.button>
+
+        <!-- Override typeNum for AJAX -->
+        <input type="hidden" name="type" value="{settingsArray.ajaxTypeNum}">
+    </f:form>
+</div>

@@ -1,0 +1,50 @@
+{namespace rkwRegistration=RKW\RkwRegistration\ViewHelpers}
+
+<fieldset>
+
+    <legend>
+        <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.closing" extensionName="RkwManagementConsultancy" />
+    </legend>
+
+    <div class="v320-1">
+        <span class="text-smaller"><f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint1" extensionName="RkwManagementConsultancy" /></span>
+            <span class="checkbox">
+                <label>
+                    <f:form.checkbox name="earlyStartDesired" value="1" />
+                    <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired" extensionName="RkwManagementConsultancy" />
+                </label>
+            </span>
+        <span class="text-smaller"><f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint2" extensionName="RkwManagementConsultancy" /></span>
+    </div>
+
+    <div class="v320-1">
+        <label for="sendDocumentsAllowed">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed" extensionName="RkwManagementConsultancy" />
+        </label>
+        <f:form.select property="sendDocumentsAllowed" options="{1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.mail\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.post\", extensionName:\"RkwManagementConsultancy\")}'}" />
+    </div>
+
+    <div class="v320-1">
+        <span class="checkbox">
+            <label>
+                <f:form.checkbox class="feedback-field" property="terms" value="1" />
+                <span class="text-smaller">
+                    <f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.termsIntro" extensionName="RkwManagementConsultancy" /> <f:link.page pageUid="{settingsArray.termsPid}" target="_blank"><f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.terms" extensionName="RkwManagementConsultancy" /></f:link.page>
+                    <f:if condition="{settings.terms2Pid}">
+                        <f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.terms2Intro" extensionName="RkwManagementConsultancy" /> <f:link.page pageUid="{settingsArray.terms2Pid}" target="_blank"><f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.terms2" extensionName="RkwManagementConsultancy" /></f:link.page>
+                    </f:if>
+                    <f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.terms3" extensionName="RkwManagementConsultancy" />
+                </span>
+            </label>
+        </span>
+        <f:if condition="{settings.includeRkwRegistrationPrivacy}">
+            <span class="checkbox">
+                <label>
+                    <f:form.checkbox property="privacy" value="1" />
+                    <rkwRegistration:privacyText />
+                </label>
+            </span>
+        </f:if>
+    </div>
+
+</fieldset>

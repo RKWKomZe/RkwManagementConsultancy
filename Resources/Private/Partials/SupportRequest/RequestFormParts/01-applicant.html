@@ -1,0 +1,232 @@
+<fieldset>
+    <legend>
+        <f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.aplicant" extensionName="RkwManagementConsultancy" />
+    </legend>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="name">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.name" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="name" />
+        </div>
+        <div class="v320-2-of-2">
+            <label for="address">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.address" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="address" />
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="zip">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.zip" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="zip" />
+        </div>
+        <div class="v320-2-of-2">
+            <label for="city">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.city" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="city" />
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="foundationDate">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_date" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="foundationDate" value="{supportRequest.foundationDate->f:format.date()}" />
+        </div>
+        <div class="v320-2-of-2">
+            <label for="revenue">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.revenue" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="revenue" />
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="balanceSum">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.balance_sum" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="balanceSum" />
+        </div>
+        <div class="v320-2-of-2">
+            <label for="numberOfEmployees">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.number_of_employees" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="numberOfEmployees" />
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <label for="legalForm">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.legal_form" extensionName="RkwManagementConsultancy" />
+        </label>
+        <f:form.select property="legalForm" options="{legalFormList}" optionValueField="uid" optionLabelField="title" prependOptionValue="0" prependOptionLabel="{f:translate(key:'tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseLegalForm')}" />
+    </div>
+
+    <div class="v320-1">
+        <label for="managerName">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.manager_name" extensionName="RkwManagementConsultancy" />
+        </label>
+        <f:form.textfield property="managerName" />
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="isStartUp">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation" extensionName="RkwManagementConsultancy" />
+            </label>
+            <span class="radio">
+                <label>
+                    <f:form.radio name="soleRepresentation" value="99" checked="checked" />
+                    &nbsp;<f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.no" extensionName="RkwManagementConsultancy" />
+                </label>
+            </span>
+
+            <span class="radio">
+                <label>
+                     <f:form.radio name="soleRepresentation" value="1" />
+                    &nbsp;<f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.yes" extensionName="RkwManagementConsultancy" />
+                </label>
+            </span>
+        </div>
+        <div class="v320-2-of-2">
+            <label for="isStartUp">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right" extensionName="RkwManagementConsultancy" />
+            </label>
+            <span class="radio">
+                <label>
+                    <f:form.radio name="deductionRight" value="99" checked="checked" />
+                    &nbsp;<f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.no" extensionName="RkwManagementConsultancy" />
+                </label>
+            </span>
+            <span class="radio">
+                <label>
+                     <f:form.radio name="deductionRight" value="1" />
+                    &nbsp;<f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.yes" extensionName="RkwManagementConsultancy" />
+                </label>
+            </span>
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <label for="businessPurpose">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.business_purpose" extensionName="RkwManagementConsultancy" />
+        </label>
+        <f:form.textfield property="businessPurpose" />
+    </div>
+
+    <div class="v320-1">
+        <label for="companyShares">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_shares" extensionName="RkwManagementConsultancy" />
+        </label>
+        <f:form.textfield property="companyShares" />
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="principleBank">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.principle_bank" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="principleBank" />
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="bic">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.bic" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="bic" />
+        </div>
+        <div class="v320-2-of-2">
+            <label for="iban">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.iban" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="iban" />
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <label for="contactPersonName">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_name" extensionName="RkwManagementConsultancy" />
+        </label>
+        <f:form.textfield property="contactPersonName" />
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="contactPersonPhone">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_phone" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="contactPersonPhone" />
+        </div>
+        <div class="v320-2-of-2">
+            <label for="contactPersonFax">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_fax" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="contactPersonFax" />
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="contactPersonMobile">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_mobile" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="contactPersonMobile" />
+        </div>
+        <div class="v320-2-of-2">
+            <label for="contactPersonEmail">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_email" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="contactPersonEmail" />
+        </div>
+    </div>
+
+    <fieldset>
+        <legend>
+            Zusätzlich für Existenzgründer
+        </legend>
+
+        <div class="v320-1">
+            <span class="checkbox">
+                <label>
+                    <f:form.checkbox name="isStartUp" value="1" />
+                    <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up" extensionName="RkwManagementConsultancy" />
+                </label>
+            </span>
+        </div>
+
+        <div class="v320-1">
+            <div class="v320-1-of-2">
+                <label for="startUpFoundationDate">
+                    <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_foundation_date" extensionName="RkwManagementConsultancy" />
+                </label>
+                <f:form.textfield property="startUpFoundationDate" value="{supportRequest.startUpFoundationDate->f:format.date()}" />
+
+            </div>
+            <div class="v320-2-of-2">
+                <label for="startUpEmploymentStatusBefore">
+                    <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before" extensionName="RkwManagementConsultancy" />
+                </label>
+                <f:form.select property="startUpEmploymentStatusBefore" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.employed\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.unemployed\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.freelancer\", extensionName:\"RkwManagementConsultancy\")}'}" />
+            </div>
+        </div>
+
+        <div class="v320-1">
+            <div class="v320-1-of-2">
+                <label for="startUpIndependentWork">
+                    <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work" extensionName="RkwManagementConsultancy" />
+                </label>
+                <f:form.select property="startUpIndependentWork" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.no\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.sideline\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.mainOccupation\", extensionName:\"RkwManagementConsultancy\")}'}" />
+            </div>
+        </div>
+    </fieldset>
+</fieldset>

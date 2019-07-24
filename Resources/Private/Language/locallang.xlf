@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-07-22T10:58:48Z" product-name="rkw_management_consultancy">
+		<header/>
+		<body>
+			<trans-unit id="tx_rkw_management_consultancy_domain_model_request">
+				<source>RKW Management Consulting: Antragsformular</source>
+			</trans-unit>
+			<trans-unit id="tx_rkw_management_consultancy_domain_model_request.description">
+				<source>Provides a form for mangement consultancy with a Backend Module for evaluation and csv export</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform">
+                <source>Legal Form</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
+                <source>Support Programme</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.consulting">
+                <source>Consulting</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting">
+                <source>Consulting</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.duration">
+                <source>Duration</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
+                <source>Support Request</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
+                <source>Type of consultation</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.consultant">
+                <source>Consultant</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.misc">
+                <source>Misc</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
+                <source>--- please choose ---</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up">
+                <source>Is Start Up</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.no">
+                <source>Not a startup</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.yes">
+                <source>Is Start Up</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.address">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.zip">
+                <source>Zip</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.city">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_date">
+                <source>Foundation Date</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.revenue">
+                <source>Revenue</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.balance_sum">
+                <source>Balance Sum</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.number_of_employees">
+                <source>Number Of Employees</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.manager_name">
+                <source>Manager Name</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation">
+                <source>Sole Representation</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.yes">
+                <source>Yes</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.no">
+                <source>No</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right">
+                <source>Deduction Right</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.yes">
+                <source>Yes</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.no">
+                <source>No</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.business_purpose">
+                <source>Business Purpose</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_shares">
+                <source>Company Shares</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.principle_bank">
+                <source>Principle Bank</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.bic">
+                <source>Bic</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.iban">
+                <source>Iban</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_name">
+                <source>Contact Person Name</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_phone">
+                <source>Contact Person Phone</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_fax">
+                <source>Contact Person Fax</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_mobile">
+                <source>Contact Person Mobile</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_email">
+                <source>Contact Person Email</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_foundation_date">
+                <source>Start Up Foundation Date</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before">
+                <source>Start Up Employment Status Before</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.employed">
+                <source>Employed</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.unemployed">
+                <source>Unemployed</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.freelancer">
+                <source>Freelancer</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work">
+                <source>Start Up Independent Work</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.no">
+                <source>No</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.sideline">
+                <source>Sideline</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.mainOccupation">
+                <source>Main Occupation</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase">
+                <source>Entire Consultation Phase</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from">
+                <source>Consulting Date From</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_up_to">
+                <source>Consulting Date Up To</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_description">
+                <source>Consulting Description</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type">
+                <source>Consultant Type</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.recommendation">
+                <source>I need a RKW recommendation</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.alreadyDecided">
+                <source>I've decided for a special onsultant</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.notDecided">
+                <source>I've NOT decided for a special consultant</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_company">
+                <source>Consultant Company</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_name1">
+                <source>Consultant Name1</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_name2">
+                <source>Consultant Name2</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant1_accreditation_number">
+                <source>Consultant1 Accreditation Number</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant2_accreditation_number">
+                <source>Consultant2 Accreditation Number</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_fee">
+                <source>Consultant Fee</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_phone">
+                <source>Consultant Phone</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_email">
+                <source>Consultant Email</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired">
+                <source>Early Start Desired</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint1">
+                <source>It's possbile to start very early in practice. There is no legal claim.</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint2">
+                <source>You do this on your own risk.</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.yes">
+                <source>Yes</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.no">
+                <source>No</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed">
+                <source>Send Documents Allowed</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.mail">
+                <source>via E-Mail</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.post">
+                <source>via post</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.support_programme">
+                <source>Support Programme</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting">
+                <source>Consulting</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.legal_form">
+                <source>Legal Form</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.privacy">
+                <source>Privacy</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.terms">
+                <source>Terms</source>
+            </trans-unit>
+
+
+
+            <!-- CONTROLLER -->
+            <trans-unit id="tx_rkwmanagementconsultancy_controller_supportrequest.error.accept_terms">
+                <source>You have to accept our terms and conditions.</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_controller_supportrequest.error.accept_privacy">
+                <source>You have to accept our terms and conditions.</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_controller_supportrequest.error.choose_support_programme">
+                <source>Please choose a support programme.</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_controller_supportrequest.success.requestCreated">
+                <source>Success! We got your support request.</source>
+            </trans-unit>
+
+
+
+            <!-- TEMPLATES -->
+             <trans-unit id="tx_rkwmanagementconsultancy_templates_new.choose">
+                <source>Choose</source>
+            </trans-unit>
+
+
+            <!-- PARTIALS -->
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_formfields.chooseSupportProgramme">
+                <source>Choose support programme</source>
+            </trans-unit>
+
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_formHeader.text1">
+                <source>Management consultancy</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_formHeader.text2">
+                <source>KMI - Freelancer - Founder</source>
+            </trans-unit>
+
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.noDescription">
+                <source>No programme description available</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.send">
+                <source>Send</source>
+            </trans-unit>
+
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.aplicant">
+                <source>Aplicant</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.consulting">
+                <source>Consulting</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.consultant">
+                <source>Consultant</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.closing">
+                <source>Closing</source>
+            </trans-unit>
+
+
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseLegalForm">
+                <source>Choose legal form</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseConsulting">
+                <source>Choose kind of consulting</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.termsIntro">
+                <source>I accept the</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.terms">
+                <source>terms</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.terms2Intro">
+                <source>and</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.terms2">
+                <source>conditions</source>
+            </trans-unit>
+
+
+
+            <!-- PARTIAL: Form errors -->
+            <trans-unit id="form.error.1221560718">
+                <source>Please fill out the field '%s'.</source>
+            </trans-unit>
+            <trans-unit id="form.error.1221560910">
+                <source>Please fill out the field '%s'.</source>
+            </trans-unit>
+
+            <trans-unit id="form.error.newSupportRequest.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.address">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.zip">
+                <source>Zip</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.city">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.foundationDate">
+                <source>Foundation Date</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.revenue">
+                <source>Revenue</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.balanceSum">
+                <source>Balance Sum</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.numberOfEmployees">
+                <source>Number Of Employees</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.managerName">
+                <source>Manager Name</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.soleRepresentation">
+                <source>Sole Representation</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.deductionRight">
+                <source>Deduction Right</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.businessPurpose">
+                <source>Business Purpose</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.companyShares">
+                <source>Company Shares</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.principleBank">
+                <source>Principle Bank</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.bic">
+                <source>Bic</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.iban">
+                <source>Iban</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.contactPersonName">
+                <source>Contact Person Name</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.contactPersonPhone">
+                <source>Contact Person Phone</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.contactPersonFax">
+                <source>Contact Person Fax</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.contactPersonMobile">
+                <source>Contact Person Mobile</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.contactPersonEmail">
+                <source>Contact Person Email</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.startUpFoundationDate">
+                <source>Start Up Foundation Date</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.startUpEmploymentStatusBefore">
+                <source>Start Up Employment Status Before</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.startUpIndependentWork">
+                <source>Start Up Independent Work</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.entireConsultationPhase">
+                <source>Entire Consultation Phase</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultingDateFrom">
+                <source>Consulting Date From</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultingDateUpTo">
+                <source>Consulting Date Up To</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultingDescription">
+                <source>Consulting Description</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultantType">
+                <source>Consultant Type</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultantCompany">
+                <source>Consultant Company</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultantName1">
+                <source>Consultant Name1</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultantName2">
+                <source>Consultant Name2</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultant1AccreditationNumber">
+                <source>Consultant1 Accreditation Number</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultant2AccreditationNumber">
+                <source>Consultant2 Accreditation Number</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultantFee">
+                <source>Consultant Fee</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultantPhone">
+                <source>Consultant Phone</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consultantEmail">
+                <source>Consultant Email</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.earlyStartDesired">
+                <source>Early Start Desired</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.sendDocumentsAllowed">
+                <source>Send Documents Allowed</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.supportProgramme">
+                <source>Support Programme</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.consulting">
+                <source>Consulting</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.legalForm">
+                <source>Legal Form</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.privacy">
+                <source>Privacy</source>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.terms">
+                <source>Terms</source>
+            </trans-unit>
+
+		</body>
+	</file>
+</xliff>

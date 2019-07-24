@@ -1,0 +1,46 @@
+<fieldset>
+    <legend>
+        <f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.consulting" extensionName="RkwManagementConsultancy" />
+    </legend>
+
+    <div class="v320-1">
+        <label for="consulting">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_consulting" extensionName="RkwManagementConsultancy" />
+        </label>
+        <f:form.select property="consulting" options="{consultingList}" optionValueField="uid" optionLabelField="title" prependOptionValue="0" prependOptionLabel="{f:translate(key:'tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseConsulting')}" />
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="entireConsultationPhase">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.select property="entireConsultationPhase" options="{0: 'test'}"  />
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="consultingDateFrom">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="consultingDateFrom" value="{supportRequest.consultingDateFrom->f:format.date()}" />
+
+        </div>
+        <div class="v320-2-of-2">
+            <label for="consultingDateUpTo">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_up_to" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="consultingDateUpTo" value="{supportRequest.consultingDateUpTo->f:format.date()}" />
+
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <label for="consultingDescription">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_description" extensionName="RkwManagementConsultancy" />
+        </label>
+        <f:form.textarea property="consultingDescription" cols="40" rows="5" />
+    </div>
+
+</fieldset>
