@@ -1,22 +1,23 @@
 <?php
-namespace RKW\RkwManagementConsultancy\Tests\Unit\Domain\Model;
+namespace RKW\RkwFeecalculator\Tests\Unit\Domain\Model;
 
 /**
  * Test case.
  *
  * @author Maximilian Fäßler <maximilian@faesslerweb.de>
+ * @author Christian Dilger <c.dilger@addorange.de>
  */
 class ConsultingTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
     /**
-     * @var \RKW\RkwManagementConsultancy\Domain\Model\Consulting
+     * @var \RKW\RkwFeecalculator\Domain\Model\Consulting
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = new \RKW\RkwManagementConsultancy\Domain\Model\Consulting();
+        $this->subject = new \RKW\RkwFeecalculator\Domain\Model\Consulting();
     }
 
     protected function tearDown()
@@ -51,17 +52,4 @@ class ConsultingTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 
     }
 
-    /**
-     * @test
-     */
-    public function getDurationReturnsInitialValueForInt()
-    {
-    }
-
-    /**
-     * @test
-     */
-    public function setDurationForIntSetsDuration()
-    {
-    }
 }

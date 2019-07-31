@@ -28,14 +28,6 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
     protected $supportProgrammeRepository = null;
 
     /**
-     * consultingRepository
-     *
-     * @var \RKW\RkwManagementConsultancy\Domain\Repository\ConsultingRepository
-     * @inject
-     */
-    protected $consultingRepository = null;
-
-    /**
      * legalFormRepository
      *
      * @var \RKW\RkwManagementConsultancy\Domain\Repository\LegalFormRepository
@@ -79,8 +71,6 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
     public function requestFormAction(\RKW\RkwFeecalculator\Domain\Model\Program $supportProgramme = null)
     {
 
-
-
         if (!$supportProgramme) {
             $this->addFlashMessage(
                 \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate(
@@ -94,11 +84,9 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         }
 
         $this->view->assign('supportProgramme', $supportProgramme);
-        $this->view->assign('consultingList', $this->consultingRepository->findBySupportProgramme($supportProgramme));
+        $this->view->assign('consultingList', $supportProgramme->getConsulting());
         $this->view->assign('legalFormList', $this->legalFormRepository->findAll());
     }
-
-
 
     /**
      * action create

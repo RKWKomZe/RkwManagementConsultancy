@@ -523,11 +523,11 @@ return [
 	    ],
 	    'consulting' => [
 	        'exclude' => true,
-	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting',
+	        'label' => 'LLL:EXT:rkw_feecalculator/Resources/Private/Language/locallang_db.xlf:tx_rkwfeecalculator_domain_model_supportrequest.consulting',
 	        'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_rkwmanagementconsultancy_domain_model_consulting',
+                'foreign_table' => 'tx_rkwfeecalculator_domain_model_consulting',
             //    'foreign_table_where' => // @toDo: Where field:support_programme = consulting.support_programme
                 'minitems' => 1,
                 'maxitems' => 1,

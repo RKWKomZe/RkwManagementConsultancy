@@ -128,22 +128,5 @@ return [
             ],
             'defaultExtras' => 'richtext[strong|emphasis]:rte_transform[ts]'
         ],
-        'consulting' => [
-	        'exclude' => true,
-	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportprogramme.consulting',
-	        'config' => [
-                'type' => 'inline',
-                'foreign_table' => 'tx_rkwmanagementconsultancy_domain_model_consulting',
-                'foreign_field' => 'support_programme',
-                'maxitems'      => 9999,
-                'appearance' => [
-                    'collapseAll' => 0,
-                    'levelLinksPosition' => 'top',
-                    'showSynchronizationLink' => 1,
-                    'showPossibleLocalizationRecords' => 1,
-                    'showAllLocalizationLink' => 1
-                ],
-			],
-	    ],
     ],
 ];
