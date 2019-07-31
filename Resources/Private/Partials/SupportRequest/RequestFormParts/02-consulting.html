@@ -1,3 +1,5 @@
+{namespace rkwCalculation=RKW\RkwFeecalculator\ViewHelpers}
+
 <fieldset>
     <legend>
         <f:translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.consulting" extensionName="RkwManagementConsultancy" />
@@ -15,7 +17,7 @@
             <label for="entireConsultationPhase">
                 <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase" extensionName="RkwManagementConsultancy" />
             </label>
-            <f:form.select property="entireConsultationPhase" options="{0: 'test'}"  />
+            <f:form.select property="entireConsultationPhase" options="<rkwCalculation:possibleDays program='{supportProgramme}'/>" prependOptionValue="0" prependOptionLabel="{f:translate(key:'tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose')}" />
         </div>
     </div>
 
