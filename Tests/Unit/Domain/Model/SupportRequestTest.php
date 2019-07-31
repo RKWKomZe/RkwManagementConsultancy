@@ -983,11 +983,11 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getLegalFormReturnsInitialValueForLegalForm()
+    public function getCompanyTypeReturnsInitialValueForCompanyType()
     {
         self::assertEquals(
             null,
-            $this->subject->getLegalForm()
+            $this->subject->getCompanyType()
         );
 
     }
@@ -995,14 +995,14 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function setLegalFormForLegalFormSetsLegalForm()
+    public function setCompanyTypeForCompanyTypeSetsCompanyType()
     {
-        $legalFormFixture = new \RKW\RkwManagementConsultancy\Domain\Model\LegalForm();
-        $this->subject->setLegalForm($legalFormFixture);
+        $companyTypeFixture = new \RKW\RkwBasics\Domain\Model\CompanyType();
+        $this->subject->setCompanyType($companyTypeFixture);
 
         self::assertAttributeEquals(
-            $legalFormFixture,
-            'legalForm',
+            $companyTypeFixture,
+            'companyType',
             $this->subject
         );
 

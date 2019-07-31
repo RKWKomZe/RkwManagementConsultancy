@@ -9,16 +9,6 @@
 			<trans-unit id="tx_rkw_management_consultancy_domain_model_request.description">
 				<source>Provides a form for mangement consultancy with a Backend Module for evaluation and csv export</source>
 			</trans-unit>
-
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform">
-				<source>Legal Form</source>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.description">
-				<source>Description</source>
-			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
 				<source>Support Programme</source>
 			</trans-unit>
@@ -238,8 +228,8 @@
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting">
 				<source>Consulting</source>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.legal_form">
-				<source>Legal Form</source>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_type">
+				<source>Company type</source>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.privacy">
                 <source>Privacy</source>

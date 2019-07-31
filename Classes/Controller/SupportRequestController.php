@@ -36,12 +36,12 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
     protected $consultingRepository = null;
 
     /**
-     * legalFormRepository
+     * companyTypeRepository
      *
-     * @var \RKW\RkwManagementConsultancy\Domain\Repository\LegalFormRepository
+     * @var \RKW\RkwBasics\Domain\Repository\CompanyTypeRepository
      * @inject
      */
-    protected $legalFormRepository = null;
+    protected $companyTypeRepository = null;
 
     /**
      * supportRequestRepository
@@ -95,7 +95,7 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
 
         $this->view->assign('supportProgramme', $supportProgramme);
         $this->view->assign('consultingList', $this->consultingRepository->findBySupportProgramme($supportProgramme));
-        $this->view->assign('legalFormList', $this->legalFormRepository->findAll());
+        $this->view->assign('companyTypeList', $this->companyTypeRepository->findAll());
     }
 
 

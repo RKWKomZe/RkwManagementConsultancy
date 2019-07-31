@@ -12,18 +12,6 @@
                 <target>Diese Extension betreibt ein Antragsformular für Unternehmensberatung</target>
             </trans-unit>
 
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform">
-                <source>Legal Form</source>
-                <target>Rechtsform</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.title">
-                <source>Title</source>
-                <target>Name</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.description">
-                <source>Description</source>
-                <target>Beschreibung</target>
-            </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
                 <source>Support Programme</source>
                 <target>Förderprogramm</target>
@@ -316,10 +304,6 @@
                 <source>Consulting</source>
                 <target>Beratung</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.legal_form">
-                <source>Legal Form</source>
-                <target>Rechtsform</target>
-            </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.privacy">
                 <source>Privacy</source>
                 <target>Datenschutz</target>
@@ -392,9 +376,9 @@
             </trans-unit>
 
 
-            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseLegalForm">
-                <source>Choose legal form</source>
-                <target>Förderprogramm wählen</target>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseCompanyType">
+                <source>Choose company type</source>
+                <target>Rechtsform wählen</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseConsulting">
                 <source>Choose kind of consulting</source>
@@ -594,8 +578,8 @@
                 <source>Consulting</source>
                 <target>Beratung</target>
             </trans-unit>
-            <trans-unit id="form.error.newSupportRequest.legalForm">
-                <source>Legal Form</source>
+            <trans-unit id="form.error.newSupportRequest.companyType">
+                <source>Company type</source>
                 <target>Rechtsform</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.privacy">
