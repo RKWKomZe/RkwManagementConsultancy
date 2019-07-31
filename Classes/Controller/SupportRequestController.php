@@ -18,10 +18,11 @@ use \TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
+
     /**
      * supportProgrammeRepository
      *
-     * @var \RKW\RkwManagementConsultancy\Domain\Repository\SupportProgrammeRepository
+     * @var \RKW\RkwFeecalculator\Domain\Repository\ProgramRepository
      * @inject
      */
     protected $supportProgrammeRepository = null;
@@ -59,6 +60,11 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
      */
     public function newAction()
     {
+        /** @var \TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings $querySettings */
+        $querySettings = $this->objectManager->get('TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings');
+        $querySettings->setRespectStoragePage(false);
+        $this->supportProgrammeRepository->setDefaultQuerySettings($querySettings);
+
         $this->view->assign('supportProgrammeList', $this->supportProgrammeRepository->findAll());
     }
 
@@ -67,11 +73,14 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
     /**
      * action requestForm
      *
-     * @param \RKW\RkwManagementConsultancy\Domain\Model\SupportProgramme $supportProgramme
+     * @param \RKW\RkwFeecalculator\Domain\Model\Program $supportProgramme
      * @return void
      */
-    public function requestFormAction(\RKW\RkwManagementConsultancy\Domain\Model\SupportProgramme $supportProgramme = null)
+    public function requestFormAction(\RKW\RkwFeecalculator\Domain\Model\Program $supportProgramme = null)
     {
+
+
+
         if (!$supportProgramme) {
             $this->addFlashMessage(
                 \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate(
