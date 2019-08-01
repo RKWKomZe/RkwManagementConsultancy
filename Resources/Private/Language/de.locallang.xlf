@@ -76,11 +76,11 @@
                 <source>Is Start Up</source>
                 <target>Ist ein Startup</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.99">
                 <source>Not a startup</source>
                 <target>Ist kein startup</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.yes">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.1">
                 <source>Is Start Up</source>
                 <target>Ist ein Startup</target>
             </trans-unit>
@@ -124,11 +124,11 @@
                 <source>Sole Representation</source>
                 <target>Einzelvertretung</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.yes">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1">
                 <source>Yes</source>
                 <target>Ja</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.99">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
@@ -136,11 +136,11 @@
                 <source>Deduction Right</source>
                 <target>Vorsteuerabzugsberechtigung</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.yes">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.1">
                 <source>Yes</source>
                 <target>Ja</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.99">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
@@ -240,15 +240,15 @@
                 <source>Consultant Type</source>
                 <target>Beraterauswahl</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.recommendation">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.1">
                 <source>I need a RKW recommendation</source>
                 <target>Ich wünsche eine Berater-Empfehlung aus dem RKW-Beraterpool.</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.alreadyDecided">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.2">
                 <source>I've decided for a special onsultant</source>
                 <target>Ich habe mich bereits für einen akkreditierten Berater entschieden.</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.notDecided">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.3">
                 <source>I've NOT decided for a special consultant</source>
                 <target>Ich habe mich bereits für einen NOCH NICHT akkreditierten Berater entschieden.</target>
             </trans-unit>
@@ -288,11 +288,19 @@
                 <source>Early Start Desired</source>
                 <target>Vorzeitiger Maßnahmebeginn erwünscht</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.yes">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint1">
+                <source>It's possbile to start very early in practice. There is no legal claim.</source>
+                 <target>Für die Thüringer Beratungs- und Gründerrichtlinie kann ein vorzeitiger Maßnahmebeginn beantrag werden! Möchten Sie auf eigenes Risiko einen vorzeitigen Maßnahmebeginn beantragen?</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint2">
+                <source>You do this on your own risk.</source>
+                 <target>Mir ist bekannt, dass kein Rechtsanspruch auf eine Förderung besteht und dass die Maßnahme in Verbindung mit der Gewährung des vorzeitigen Maßnahmebeginns auf eigenes Risiko durchgeführt wird.</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.1">
                 <source>Yes</source>
                 <target>Ja</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.99">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
@@ -300,11 +308,11 @@
                 <source>Send Documents Allowed</source>
                 <target>Wie dürfen wir Ihnen Ihre Antragsunterlagen zusenden?</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.mail">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.1">
                 <source>via E-Mail</source>
                 <target>Per E-Mail</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.post">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.2">
                 <source>via post</source>
                 <target>Per Post</target>
             </trans-unit>
@@ -394,7 +402,7 @@
 
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseLegalForm">
                 <source>Choose legal form</source>
-                <target>Förderprogramm wählen</target>
+                <target>Rechtsform wählen</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseConsulting">
                 <source>Choose kind of consulting</source>
@@ -607,6 +615,44 @@
                 <target>AGB</target>
             </trans-unit>
 
+
+            <!-- EMAIL -->
+            
+            <!-- Templates/Email/ConfirmationUser.html -->
+            <trans-unit id="templates_email_confirmationUser.headline">
+                <source>Hello %s %s,</source>
+                <target>Hallo %s %s,</target>
+            </trans-unit>
+            <trans-unit id="templates_email_confirmationUser.text1">
+                <source>thank you for your support request.</source>
+                <target>vielen Dank für Ihren Antrag auf ein Förderprogramm des RKW Kompetenzzentrums.</target>
+            </trans-unit>
+            <trans-unit id="templates_email_confirmationUser.text2">
+                <source>You will get an answer to your support request shortly.</source>
+                <target>Untenstehend finden Sie die Details Ihres Antrags. Wir melden uns baldmöglichst wieder bei Ihnen.</target>
+            </trans-unit>
+
+            <trans-unit id="rkwMailService.confirmationUser.subject">
+                <source>Thanks for your request</source>
+                <target>RKW Förderprogramm: Ihr Antrag</target>
+            </trans-unit>
+            <trans-unit id="rkwMailService.notifyAdmin.subject">
+                <source>A new support request has arrived</source>
+                <target>RKW Förderprogramm: Ein neuer Antrag wurde gestellt</target>
+            </trans-unit>
+            
+            
+            <!-- Templates/Email/NotifyAdmin.html -->
+            <trans-unit id="templates_email_notifyAdmin.headline">
+                <source>Hello %s,</source>
+                <target>Hallo %s,</target>
+            </trans-unit>
+            <trans-unit id="templates_email_notifyAdmin.text1">
+                <source>a new support request arrived. Please show below for details.</source>
+                <target>über die Website wurde ein Förderantrag gestellt. Bitte prüfen Sie den untenstehende Antrag. Sie können bei etwaigen Rückfragen direkt auf diese E-Mail antworten.</target>
+            </trans-unit>
+            
+            
 		</body>
 	</file>
 </xliff>

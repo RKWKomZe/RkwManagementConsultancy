@@ -124,11 +124,11 @@
 				<source>Sole Representation</source>
 				<target>Einzelvertretung</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.yes">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1">
                 <source>Yes</source>
                 <target>Ja</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.99">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
@@ -136,11 +136,11 @@
 				<source>Deduction Right</source>
 				<target>Vorsteuerabzugsberechtigung</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.yes">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.1">
                 <source>Yes</source>
                 <target>Ja</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.99">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
@@ -240,15 +240,15 @@
 				<source>Consultant Type</source>
 				<target>Beraterauswahl</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.recommendation">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.1">
                 <source>I need a RKW recommendation</source>
                 <target>Ich wünsche eine Berater-Empfehlung aus dem RKW-Beraterpool.</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.alreadyDecided">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.2">
                 <source>I've decided for a special onsultant</source>
                 <target>Ich habe mich bereits für einen akkreditierten Berater entschieden.</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.notDecided">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.3">
                 <source>I've NOT decided for a special consultant</source>
                 <target>Ich habe mich bereits für einen NOCH NICHT akkreditierten Berater entschieden.</target>
             </trans-unit>
@@ -288,11 +288,11 @@
 				<source>Early Start Desired</source>
 				<target>Vorzeitiger Maßnahmebeginn erwünscht</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.yes">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.1">
                 <source>Yes</source>
                 <target>Ja</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.99">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
@@ -300,11 +300,11 @@
 				<source>Send Documents Allowed</source>
 				<target>Wie dürfen wir Ihnen Ihre Antragsunterlagen zusenden?</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.mail">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.1">
                 <source>via E-Mail</source>
                 <target>Per E-Mail</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.post">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.2">
                 <source>via post</source>
                 <target>Per Post</target>
             </trans-unit>
@@ -327,6 +327,17 @@
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.terms">
                 <source>Terms</source>
                 <target>Allgemeine Geschäftsbedingungen</target>
+            </trans-unit>
+
+
+            <!-- flexform -->
+
+            <trans-unit id="flexform.request.sheetTitle">
+                <source>BackendUser</source>
+            </trans-unit>
+            <trans-unit id="flexform.select.beuser">
+                <source>Backend User to mail (only shown if email is set)</source>
+                <target>Backend User für Antrag-Email</target>
             </trans-unit>
 		</body>
 	</file>

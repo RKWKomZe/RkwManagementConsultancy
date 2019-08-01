@@ -1,3 +1,41 @@
+config.tx_extbase.persistence {
+
+    classes {
+
+        #===============================================
+
+        RKW\RkwRegistration\Domain\Model\FrontendUser {
+            subclasses {
+                Tx_RkwManagementConsultancy_FrontendUser = RKW\RkwManagementConsultancy\Domain\Model\FrontendUser
+            }
+        }
+
+        RKW\RkwManagementConsultancy\Domain\Model\FrontendUser {
+            mapping {
+                tableName = fe_users
+                recordType =
+            }
+        }
+
+        #===============================================
+
+        TYPO3\CMS\Extbase\Domain\Model\BackendUser {
+            subclasses {
+                Tx_RkwManagementConsultancy_BackendUser = RKW\RkwManagementConsultancy\Domain\Model\BackendUser
+            }
+        }
+
+
+        RKW\RkwManagementConsultancy\Domain\Model\BackendUser {
+            mapping {
+                tableName = be_users
+                columns {
+                    usergroup.mapOnProperty = backendUserGroups
+                }
+            }
+        }
+    }
+}
 
 plugin.tx_rkwmanagementconsultancy {
     view {

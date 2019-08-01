@@ -93,19 +93,19 @@
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation">
                 <source>Sole Representation</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.yes">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1">
                 <source>Yes</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.99">
                 <source>No</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right">
                 <source>Deduction Right</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.yes">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.1">
                 <source>Yes</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.99">
                 <source>No</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.business_purpose">
@@ -180,13 +180,13 @@
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type">
                 <source>Consultant Type</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.recommendation">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.1">
                 <source>I need a RKW recommendation</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.alreadyDecided">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.2">
                 <source>I've decided for a special onsultant</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.notDecided">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.3">
                 <source>I've NOT decided for a special consultant</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_company">
@@ -222,19 +222,19 @@
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint2">
                 <source>You do this on your own risk.</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.yes">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.1">
                 <source>Yes</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.no">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.99">
                 <source>No</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed">
                 <source>Send Documents Allowed</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.mail">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.1">
                 <source>via E-Mail</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.post">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.2">
                 <source>via post</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.support_programme">
@@ -470,6 +470,36 @@
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.terms">
                 <source>Terms</source>
+            </trans-unit>
+
+
+            <!-- EMAIL -->
+
+            <!-- Templates/Email/ConfirmationUser.html -->
+            <trans-unit id="templates_email_confirmationUser.headline">
+                <source>Hello %s %s,</source>
+            </trans-unit>
+            <trans-unit id="templates_email_confirmationUser.text1">
+                <source>thank you for your support request.</source>
+            </trans-unit>
+            <trans-unit id="templates_email_confirmationUser.text2">
+                <source>You will get an answer to you support request shortly.</source>
+            </trans-unit>
+
+            <trans-unit id="rkwMailService.confirmationUser.subject">
+                <source>Thanks for your support request</source>
+            </trans-unit>
+            <trans-unit id="rkwMailService.notifyAdmin.subject">
+                <source>A new support request has arrived</source>
+            </trans-unit>
+
+
+            <!-- Templates/Email/NotifyAdmin.html -->
+            <trans-unit id="templates_email_notifyAdmin.headline">
+                <source>Hello %s,</source>
+            </trans-unit>
+            <trans-unit id="templates_email_notifyAdmin.text1">
+                <source>a new support request arrived. Please show below for details.</source>
             </trans-unit>
 
 		</body>
