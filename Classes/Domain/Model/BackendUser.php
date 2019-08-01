@@ -1,5 +1,6 @@
 <?php
-namespace RKW\RkwManagementConsultancy\Domain\Repository;
+
+namespace RKW\RkwManagementConsultancy\Domain\Model;
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -14,14 +15,15 @@ namespace RKW\RkwManagementConsultancy\Domain\Repository;
  */
 
 /**
- * The repository for SupportProgramme
+ * Class BackendUser
  *
  * @author Maximilian Fäßler <maximilian@faesslerweb.de>
  * @copyright Rkw Kompetenzzentrum
  * @package RKW_RkwManagementConsultancy
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class SupportProgrammeRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+class BackendUser extends \RKW\RkwRegistration\Domain\Model\BackendUser
 {
+
 
 }

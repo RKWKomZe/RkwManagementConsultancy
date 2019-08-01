@@ -199,8 +199,8 @@ return [
                 'default' => 0,
                 'items' => [
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.no', 99],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.yes', 1],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.99', 99],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1', 1],
                 ]
 			]
 	    ],
@@ -213,8 +213,8 @@ return [
                 'default' => 0,
                 'items' => [
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.no', 99],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.yes', 1],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.99', 99],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.1', 1],
                 ]
 			]
 	    ],
@@ -404,9 +404,9 @@ return [
                 'default' => 0,
                 'items' => [
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.recommendation', 1],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.alreadyDecided', 2],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.notDecided', 3],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.1', 1],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.2', 2],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.3', 3],
                 ]
 			]
 	    ],
@@ -491,8 +491,8 @@ return [
                 'default' => 0,
                 'items' => [
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.yes', 1],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.no', 2],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.1', 1],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.99', 99],
                 ]
 			]
 	    ],
@@ -505,8 +505,8 @@ return [
                 'default' => 0,
                 'items' => [
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.mail', 1],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.post', 2],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.1', 1],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.2', 2],
                 ]
 			]
 	    ],
