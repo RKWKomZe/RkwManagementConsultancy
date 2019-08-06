@@ -347,7 +347,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * supportProgramme
      *
-     * @var \RKW\RkwManagementConsultancy\Domain\Model\SupportProgramme
+     * @var \RKW\RkwFeecalculator\Domain\Model\Program
      * @validate NotEmpty
      */
     protected $supportProgramme = null;
@@ -1253,7 +1253,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the supportProgramme
      *
-     * @return \RKW\RkwManagementConsultancy\Domain\Model\SupportProgramme $supportProgramme
+     * @return \RKW\RkwFeecalculator\Domain\Model\Program $supportProgramme
      */
     public function getSupportProgramme()
     {
@@ -1263,7 +1263,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the supportProgramme
      *
-     * @param \RKW\RkwManagementConsultancy\Domain\Model\SupportProgramme $supportProgramme
+     * @param \RKW\RkwFeecalculator\Domain\Model\Program $supportProgramme
      * @return void
      */
     public function setSupportProgramme($supportProgramme)
