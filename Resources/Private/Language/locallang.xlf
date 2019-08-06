@@ -9,27 +9,6 @@
 			<trans-unit id="tx_rkw_management_consultancy_domain_model_request.description">
 				<source>Provides a form for mangement consultancy with a Backend Module for evaluation and csv export</source>
 			</trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
-                <source>Support Programme</source>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.title">
-                <source>Title</source>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.description">
-                <source>Description</source>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.consulting">
-                <source>Consulting</source>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting">
-                <source>Consulting</source>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.title">
-                <source>Title</source>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.duration">
-                <source>Duration</source>
-            </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
                 <source>Support Request</source>
             </trans-unit>

@@ -12,34 +12,6 @@
 			    <target>Diese Extension betreibt ein Antragsformular für Unternehmensberatung</target>
 			</trans-unit>
 
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
-				<source>Support Programme</source>
-				<target>Förderprogramm</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.title">
-                <source>Title</source>
-                <target>Name</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.description">
-                <source>Description</source>
-                <target>Beschreibung</target>
-            </trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.consulting">
-				<source>Consulting</source>
-				<target>Art der Beratung</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting">
-				<source>Consulting</source>
-				<target>Art der Beratung</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.title">
-				<source>Title</source>
-				<target>Name</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.duration">
-				<source>Duration</source>
-				<target>Dauer</target>
-			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
 				<source>Support Request</source>
 				<target>Unterstützungsanfrage</target>
