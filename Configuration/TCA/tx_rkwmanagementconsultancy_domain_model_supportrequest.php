@@ -14,17 +14,17 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
-        'searchFields' => 'is_start_up,name,address,zip,city,foundation_date,revenue,balance_sum,number_of_employees,manager_name,sole_representation,deduction_right,business_purpose,company_shares,principle_bank,bic,iban,contact_person_name,contact_person_phone,contact_person_fax,contact_person_mobile,contact_person_email,start_up_foundation_date,start_up_employment_status_before,start_up_independent_work,entire_consultation_phase,consulting_date_from,consulting_date_up_to,consulting_description,consultant_type,consultant_company,consultant_name1,consultant_name2,consultant1_accreditation_number,consultant2_accreditation_number,consultant_fee,consultant_phone,consultant_email,early_start_desired,send_documents_allowed,support_programme,consulting,legal_form',
+        'searchFields' => 'is_start_up,name,address,zip,city,foundation_date,revenue,balance_sum,number_of_employees,manager_name,sole_representation,deduction_right,business_purpose,company_shares,principle_bank,bic,iban,contact_person_name,contact_person_phone,contact_person_fax,contact_person_mobile,contact_person_email,start_up_foundation_date,start_up_employment_status_before,start_up_independent_work,entire_consultation_phase,consulting_date_from,consulting_date_up_to,consulting_description,consultant_type,consultant_company,consultant_name1,consultant_name2,consultant1_accreditation_number,consultant2_accreditation_number,consultant_fee,consultant_phone,consultant_email,early_start_desired,send_documents_allowed,support_programme,consulting,company_type',
         'iconfile' => 'EXT:rkw_management_consultancy/Resources/Public/Icons/tx_rkwmanagementconsultancy_domain_model_supportrequest.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, is_start_up, name, address, zip, city, foundation_date, revenue, balance_sum, number_of_employees, manager_name, sole_representation, deduction_right, business_purpose, company_shares, principle_bank, bic, iban, contact_person_name, contact_person_phone, contact_person_fax, contact_person_mobile, contact_person_email, start_up_foundation_date, start_up_employment_status_before, start_up_independent_work, entire_consultation_phase, consulting_date_from, consulting_date_up_to, consulting_description, consultant_type, consultant_company, consultant_name1, consultant_name2, consultant1_accreditation_number, consultant2_accreditation_number, consultant_fee, consultant_phone, consultant_email, early_start_desired, send_documents_allowed, support_programme, consulting, legal_form',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, is_start_up, name, address, zip, city, foundation_date, revenue, balance_sum, number_of_employees, manager_name, sole_representation, deduction_right, business_purpose, company_shares, principle_bank, bic, iban, contact_person_name, contact_person_phone, contact_person_fax, contact_person_mobile, contact_person_email, start_up_foundation_date, start_up_employment_status_before, start_up_independent_work, entire_consultation_phase, consulting_date_from, consulting_date_up_to, consulting_description, consultant_type, consultant_company, consultant_name1, consultant_name2, consultant1_accreditation_number, consultant2_accreditation_number, consultant_fee, consultant_phone, consultant_email, early_start_desired, send_documents_allowed, support_programme, consulting, company_type',
     ],
     'types' => [
         '1' => [
             'showitem' => '
             sys_language_uid, l10n_parent, l10n_diffsource, hidden, 
-            support_programme, is_start_up, name, address, zip, city, foundation_date, revenue, balance_sum, number_of_employees, legal_form, manager_name, sole_representation, deduction_right, business_purpose, company_shares, principle_bank, bic, iban, contact_person_name, contact_person_phone, contact_person_fax, contact_person_mobile, contact_person_email, start_up_foundation_date, start_up_employment_status_before, start_up_independent_work, 
+            support_programme, is_start_up, name, address, zip, city, foundation_date, revenue, balance_sum, number_of_employees, company_type, manager_name, sole_representation, deduction_right, business_purpose, company_shares, principle_bank, bic, iban, contact_person_name, contact_person_phone, contact_person_fax, contact_person_mobile, contact_person_email, start_up_foundation_date, start_up_employment_status_before, start_up_independent_work, 
             
              --div--;LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation,
             entire_consultation_phase, consulting_date_from, consulting_date_up_to, consulting_description, 
@@ -533,13 +533,13 @@ return [
                 'maxitems' => 1,
 			],
 	    ],
-	    'legal_form' => [
+	    'company_type' => [
 	        'exclude' => true,
-	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.legal_form',
+	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.company_type',
 	        'config' => [
 			    'type' => 'select',
                 'renderType' => 'selectSingle',
-			    'foreign_table' => 'tx_rkwmanagementconsultancy_domain_model_legalform',
+			    'foreign_table' => 'tx_rkwbasics_domain_model_companytype',
 			    'minitems' => 1,
 			    'maxitems' => 1,
 			],

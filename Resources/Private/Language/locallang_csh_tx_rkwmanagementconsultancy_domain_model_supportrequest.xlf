@@ -135,8 +135,8 @@
 			<trans-unit id="consulting.description">
 				<source>consulting</source>
 			</trans-unit>
-			<trans-unit id="legal_form.description">
-				<source>legalForm</source>
+			<trans-unit id="company_type.description">
+				<source>companyType</source>
 			</trans-unit>
 			<trans-unit id="privacy.description">
                 <source>privacy</source>

@@ -361,12 +361,12 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $consulting = 0;
 
     /**
-     * legalForm
+     * companyType
      *
-     * @var \RKW\RkwManagementConsultancy\Domain\Model\LegalForm
+     * @var \RKW\RkwBasics\Domain\Model\CompanyType
      * @validate NotEmpty
      */
-    protected $legalForm = 0;
+    protected $companyType = 0;
 
     /**
      * Returns the isStartUp
@@ -1293,23 +1293,23 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the legalForm
+     * Returns the companyType
      *
-     * @return \RKW\RkwManagementConsultancy\Domain\Model\LegalForm $legalForm
+     * @return \RKW\RkwBasics\Domain\Model\CompanyType $companyType
      */
-    public function getLegalForm()
+    public function getCompanyType()
     {
-        return $this->legalForm;
+        return $this->companyType;
     }
 
     /**
-     * Sets the legalForm
+     * Sets the companyType
      *
-     * @param \RKW\RkwManagementConsultancy\Domain\Model\LegalForm $legalForm
+     * @param \RKW\RkwBasics\Domain\Model\CompanyType $companyType
      * @return void
      */
-    public function setLegalForm($legalForm)
+    public function setCompanyType($companyType)
     {
-        $this->legalForm = $legalForm;
+        $this->companyType = $companyType;
     }
 }
