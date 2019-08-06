@@ -160,11 +160,11 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         // ----------------------
 
         // send final confirmation mail to user
-        $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_USER, array($frontendUser, $newSupportRequest));
+        $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_USER, [$frontendUser, $newSupportRequest]);
 
         // send information mail to admins
         $adminUidList = explode(',', $this->settings['mail']['backendUser']);
-        $backendUsers = array();
+        $backendUsers = [];
         foreach ($adminUidList as $adminUid) {
             if ($adminUid) {
                 $admin = $this->backendUserRepository->findByUid($adminUid);
@@ -177,7 +177,7 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         // fallback-handling
         if (
             (count($backendUsers) < 1)
-            && ($backendUserFallback = intval($this->settings['backendUserIdForMails']))
+            && ($backendUserFallback = (int)$this->settings['backendUserIdForMails'])
         ) {
             $admin = $this->backendUserRepository->findByUid($backendUserFallback);
             if (
@@ -189,7 +189,7 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
 
         }
 
-        $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_ADMIN, array($backendUsers, $newSupportRequest));
+        $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_ADMIN, [$backendUsers, $newSupportRequest]);
 
         $this->redirect('new');
     }
