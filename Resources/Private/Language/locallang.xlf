@@ -259,6 +259,9 @@
                 <source>KMI - Freelancer - Founder</source>
             </trans-unit>
 
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.headline">
+                <source>Consulting request within "%s"</source>
+            </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.send">
                 <source>Send</source>
             </trans-unit>

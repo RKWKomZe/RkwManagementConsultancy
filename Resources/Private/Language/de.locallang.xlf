@@ -332,6 +332,11 @@
                 <target>Auswählen</target>
             </trans-unit>
 
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.headline">
+                <source>Consulting request within "%s"</source>
+                <target>Beratungsanfrage im Rahmen des Programms "%s"</target>
+            </trans-unit>
+
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.send">
                 <source>Send</source>
                 <target>Antrag abschicken</target>
