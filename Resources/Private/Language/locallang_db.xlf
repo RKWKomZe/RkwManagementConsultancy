@@ -22,7 +22,7 @@
                 <source>Misc</source>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
-                <source>--- please choose ---</source>
+                <source>-- Please choose --</source>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up">
 				<source>Is Start Up</source>

@@ -22,7 +22,7 @@
                 <source>Misc</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
-                <source>--- please choose ---</source>
+                <source>-- Please choose --</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up">
                 <source>Is Start Up</source>
@@ -187,7 +187,7 @@
                 <source>Early Start Desired</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint1">
-                <source>It's possbile to start very early in practice. There is no legal claim.</source>
+                <source>It's possible to start prematurely. There is no legal claim.</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint2">
                 <source>You do this on your own risk.</source>
@@ -259,15 +259,12 @@
                 <source>KMI - Freelancer - Founder</source>
             </trans-unit>
 
-            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.noDescription">
-                <source>No programme description available</source>
-            </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.send">
                 <source>Send</source>
             </trans-unit>
 
-            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.aplicant">
-                <source>Aplicant</source>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.applicant">
+                <source>applicant</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.consulting">
                 <source>Consulting</source>
@@ -275,10 +272,9 @@
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.consultant">
                 <source>Consultant</source>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.closing">
-                <source>Closing</source>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.additional">
+                <source>Additional information</source>
             </trans-unit>
-
 
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseCompanyType">
                 <source>Choose company type</source>

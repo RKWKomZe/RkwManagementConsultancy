@@ -28,7 +28,7 @@ $EM_CONF[$_EXTKEY] = [
             'rkw_registration' => '8.7.0-8.7.99',
             'rkw_mailer' => '8.7.0-8.7.99',
             'rkw_basics' => '8.7.8-8.7.99',
-            'rkw_feecalculator' => '7.6.8-8.7.99',
+            'rkw_feecalculator' => '7.6.9-8.7.99',
         ],
         'conflicts' => [],
         'suggests' => [],

@@ -29,20 +29,20 @@
                 <target>Weiteres</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
-                <source>--- please choose ---</source>
-                <target>--- Bitte wählen ---</target>
+                <source>-- Please choose --</source>
+                <target>-- Bitte wählen --</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up">
 				<source>Is Start Up</source>
-				<target>Ist ein Startup</target>
+				<target>Ist ein Unternehmen in Gründung</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.no">
                 <source>Not a startup</source>
-                <target>Ist kein startup</target>
+                <target>Ist kein Unternehmen in Gründung</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.yes">
                 <source>Is Start Up</source>
-                <target>Ist ein Startup</target>
+				<target>Ist ein Unternehmen in Gründung</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.name">
 				<source>Name</source>
@@ -174,7 +174,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.sideline">
                 <source>Sideline</source>
-                <target>Ja - nebenerwerb</target>
+                <target>Ja - im Nebenerwerb</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.mainOccupation">
                 <source>Main Occupation</source>
@@ -182,7 +182,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase">
                 <source>Entire Consultation Phase</source>
-                <target>Beratungsdauer (Tagwerke a' 8h)</target>
+                <target>Beratungsdauer (Tagwerke á 8h)</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from">
 				<source>Consulting Date From</source>
