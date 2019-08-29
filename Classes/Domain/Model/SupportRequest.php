@@ -355,7 +355,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * consulting
      *
-     * @var \RKW\RkwManagementConsultancy\Domain\Model\Consulting
+     * @var \RKW\RkwFeecalculator\Domain\Model\Consulting
      * @validate NotEmpty
      */
     protected $consulting = 0;
