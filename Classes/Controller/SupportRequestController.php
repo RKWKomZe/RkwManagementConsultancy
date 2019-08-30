@@ -14,6 +14,7 @@ namespace RKW\RkwManagementConsultancy\Controller;
  * The TYPO3 project - inspiring people to share!
  */
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
+
 /**
  * SupportRequestController
  *
@@ -102,8 +103,6 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         $this->view->assign('supportProgrammeList', $this->supportProgrammeRepository->findAll());
     }
 
-
-
     /**
      * action requestForm
      *
@@ -112,7 +111,6 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
      */
     public function requestFormAction(\RKW\RkwFeecalculator\Domain\Model\Program $supportProgramme = null)
     {
-
         if (!$supportProgramme) {
             $this->addFlashMessage(
                 \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate(
@@ -142,6 +140,12 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         $frontendUser = GeneralUtility::makeInstance('RKW\\RkwRegistration\\Domain\\Model\\FrontendUser');
         $frontendUser->setEmail($newSupportRequest->getContactPersonEmail());
         $frontendUser->setFirstName($newSupportRequest->getManagerName());
+
+        //  transform dates from string to timestamp
+        $newSupportRequest->setFoundationDate(\DateTime::createFromFormat('d.m.Y', $newSupportRequest->getFoundationDate())->getTimestamp());
+        $newSupportRequest->setStartUpFoundationDate(\DateTime::createFromFormat('d.m.Y', $newSupportRequest->getStartUpFoundationDate())->getTimestamp());
+        $newSupportRequest->setConsultingDateFrom(\DateTime::createFromFormat('d.m.Y', $newSupportRequest->getConsultingDateFrom())->getTimestamp());
+        $newSupportRequest->setConsultingDateUpTo(\DateTime::createFromFormat('d.m.Y', $newSupportRequest->getConsultingDateUpTo())->getTimestamp());
 
         if ($this->settings['includeRkwRegistrationPrivacy']) {
             // add privacy info

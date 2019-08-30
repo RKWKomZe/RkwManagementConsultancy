@@ -114,7 +114,7 @@ return [
 	        'config' => [
 			    'type' => 'input',
 			    'size' => 30,
-			    'eval' => 'trim,required'
+//			    'eval' => 'trim,required'
 			],
 	    ],
 	    'address' => [
@@ -147,12 +147,14 @@ return [
 	    'foundation_date' => [
 	        'exclude' => true,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_date',
-	        'config' => [
-                'type' => 'text',
-                'cols' => 40,
-                'rows' => 15,
-                'eval' => 'trim,required'
-			],
+            'config' => [
+                'type' => 'input',
+                'size' => 13,
+                'max' => 20,
+                'eval' => 'datetime, required',
+                'checkbox' => 0,
+                'default' => 0,
+            ],
 	    ],
 	    'revenue' => [
 	        'exclude' => true,
@@ -311,14 +313,14 @@ return [
 	    'start_up_foundation_date' => [
 	        'exclude' => true,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_foundation_date',
-	        'config' => [
+            'config' => [
                 'type' => 'input',
                 'size' => 13,
                 'max' => 20,
                 'eval' => 'datetime, required',
                 'checkbox' => 0,
                 'default' => 0,
-			],
+            ],
 	    ],
 	    'start_up_employment_status_before' => [
 	        'exclude' => true,
@@ -368,22 +370,26 @@ return [
 	    'consulting_date_from' => [
 	        'exclude' => true,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from',
-	        'config' => [
-                'type' => 'text',
-                'cols' => 40,
-                'rows' => 15,
-                'eval' => 'trim,required'
-			],
+            'config' => [
+                'type' => 'input',
+                'size' => 13,
+                'max' => 20,
+                'eval' => 'datetime, required',
+                'checkbox' => 0,
+                'default' => 0,
+            ],
 	    ],
 	    'consulting_date_up_to' => [
 	        'exclude' => true,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_up_to',
-	        'config' => [
-                'type' => 'text',
-                'cols' => 40,
-                'rows' => 15,
-                'eval' => 'trim,required'
-			],
+            'config' => [
+                'type' => 'input',
+                'size' => 13,
+                'max' => 20,
+                'eval' => 'datetime, required',
+                'checkbox' => 0,
+                'default' => 0,
+            ],
 	    ],
 	    'consulting_description' => [
 	        'exclude' => true,

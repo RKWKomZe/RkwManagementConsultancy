@@ -27,7 +27,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * isStartUp
      *
      * @var int
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $isStartUp = 0;
 
@@ -35,7 +35,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * name
      *
      * @var string
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $name = '';
 
@@ -43,7 +43,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * address
      *
      * @var string
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $address = '';
 
@@ -51,7 +51,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * zip
      *
      * @var int
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $zip = 0;
 
@@ -59,7 +59,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * city
      *
      * @var string
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $city = '';
 
@@ -67,6 +67,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * foundationDate
      *
      * @var string
+     * @validate NotEmpty, \RKW\RkwManagementConsultancy\Validation\Validator\CustomDateValidator
      */
     protected $foundationDate = 0;
 
@@ -95,7 +96,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * managerName
      *
      * @var string
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $managerName = '';
 
@@ -103,7 +104,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * soleRepresentation
      *
      * @var int
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $soleRepresentation = 0;
 
@@ -111,7 +112,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * deductionRight
      *
      * @var int
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $deductionRight = 0;
 
@@ -119,7 +120,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * businessPurpose
      *
      * @var string
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $businessPurpose = '';
 
@@ -127,7 +128,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * companyShares
      *
      * @var string
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $companyShares = '';
 
@@ -156,7 +157,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * contactPersonName
      *
      * @var string
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $contactPersonName = '';
 
@@ -164,7 +165,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * contactPersonPhone
      *
      * @var string
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $contactPersonPhone = '';
 
@@ -186,14 +187,15 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * contactPersonEmail
      *
      * @var string
-     * @validate NotEmpty, EmailAddress
+//     * @validate NotEmpty, EmailAddress
      */
     protected $contactPersonEmail = '';
 
     /**
      * startUpFoundationDate
      *
-     * @var int
+     * @var string
+     * @validate NotEmpty, \RKW\RkwManagementConsultancy\Validation\Validator\CustomDateValidator
      */
     protected $startUpFoundationDate = 0;
 
@@ -222,7 +224,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultingDateFrom
      *
      * @var string
-     * @validate NotEmpty
+     * @validate NotEmpty, \RKW\RkwManagementConsultancy\Validation\Validator\CustomDateValidator
      */
     protected $consultingDateFrom = 0;
 
@@ -230,7 +232,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultingDateUpTo
      *
      * @var string
-     * @validate NotEmpty
+     * @validate NotEmpty, \RKW\RkwManagementConsultancy\Validation\Validator\CustomDateValidator
      */
     protected $consultingDateUpTo = 0;
 
@@ -238,7 +240,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultingDescription
      *
      * @var string
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $consultingDescription = '';
 
@@ -246,7 +248,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultantType
      *
      * @var int
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $consultantType = 0;
 
@@ -254,7 +256,6 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultantCompany
      *
      * @var string
-     * @validate NotEmpty
      */
     protected $consultantCompany = '';
 
@@ -262,7 +263,6 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultantName1
      *
      * @var string
-     * @validate NotEmpty
      */
     protected $consultantName1 = '';
 
@@ -277,7 +277,6 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultant1AccreditationNumber
      *
      * @var string
-     * @validate NotEmpty
      */
     protected $consultant1AccreditationNumber = '';
 
@@ -292,7 +291,6 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultantFee
      *
      * @var string
-     * @validate NotEmpty
      */
     protected $consultantFee = '';
 
@@ -300,7 +298,6 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultantPhone
      *
      * @var string
-     * @validate NotEmpty
      */
     protected $consultantPhone = '';
 
@@ -308,7 +305,6 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consultantEmail
      *
      * @var string
-     * @validate NotEmpty, EmailAddress
      */
     protected $consultantEmail = '';
 
@@ -316,7 +312,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * earlyStartDesired
      *
      * @var int
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $earlyStartDesired = 0;
 
@@ -324,7 +320,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * sendDocumentsAllowed
      *
      * @var int
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $sendDocumentsAllowed = 0;
 
@@ -332,7 +328,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * privacy
      *
      * @var int
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $privacy = 0;
 
@@ -340,7 +336,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * terms
      *
      * @var int
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $terms = 0;
 
@@ -348,7 +344,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * supportProgramme
      *
      * @var \RKW\RkwFeecalculator\Domain\Model\Program
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $supportProgramme = null;
 
@@ -356,7 +352,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * consulting
      *
      * @var \RKW\RkwFeecalculator\Domain\Model\Consulting
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $consulting = 0;
 
@@ -364,7 +360,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * companyType
      *
      * @var \RKW\RkwBasics\Domain\Model\CompanyType
-     * @validate NotEmpty
+//     * @validate NotEmpty
      */
     protected $companyType = 0;
 
@@ -476,7 +472,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the foundationDate
      *
-     * @return string $foundationDate
+     * @return \DateTime
      */
     public function getFoundationDate()
     {
@@ -486,7 +482,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the foundationDate
      *
-     * @param string $foundationDate
+     * @param \DateTime $foundationDate
      * @return void
      */
     public function setFoundationDate($foundationDate)

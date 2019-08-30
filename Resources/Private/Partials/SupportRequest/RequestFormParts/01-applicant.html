@@ -34,12 +34,69 @@
     </div>
 
     <div class="v320-1">
+
+        <![CDATA[
+            <script type="text/javascript">
+                var DateSelector = {
+                    field: null,
+                    data: {
+                        date: new Date(),
+                        day: 0,
+                        month: -1,
+                        year: 0,
+                        format: {
+                            locale: 'de-DE',
+                            options: {
+                                day: '2-digit',
+                                month: '2-digit',
+                                year: 'numeric'
+                            }
+                        }
+                    },
+                    init: function() {
+                        console.log('on load');
+                        this.field = document.getElementById('foundationDate');
+                        if (this.field.value !== '') {
+                            var parsedDate = this.field.value.split(".");
+
+                            this.data.date = new Date(parsedDate[2], parsedDate[1], parsedDate[0]);
+
+                            console.log(this.data.date);
+
+                            this.data.day = this.data.date.getDate();
+                            this.data.month = this.data.date.getMonth();
+                            this.data.year = this.data.date.getFullYear();
+
+                            //  @todo: set select fields, too!!!
+                        }
+                    },
+                    update: function(event, type) {
+                        this.init();
+
+                        this.data[type] = event.target.value;
+                        if (type === 'month') {
+                            this.data[type] = event.target.value - 1;
+                        }
+
+                        this.set();
+                    },
+                    set: function() {
+                        if (this.data.day > 0 && this.data.month > 0 && this.data.year > 0) {
+                            this.data.date = new Date(this.data.year, this.data.month, this.data.day);
+                            this.field.value = this.data.date.toLocaleDateString(this.data.format.locale, this.data.format.options);
+                        }
+                    }
+                };
+            </script>
+        ]]>
+
         <div class="v320-1-of-2">
             <label for="foundationDate">
                 <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_date" extensionName="RkwManagementConsultancy" />
             </label>
-            <f:form.textfield property="foundationDate" value="{supportRequest.foundationDate->f:format.date()}" />
+            <f:form.textfield property="foundationDate" id="foundationDate" value="{supportRequest.foundationDate->f:format.date()}" placeholder="DD.MM.YYYY"/>
         </div>
+
         <div class="v320-2-of-2">
             <label for="companyType">
                 <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_type" extensionName="RkwManagementConsultancy" />
@@ -212,7 +269,7 @@
                 <label for="startUpFoundationDate">
                     <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_foundation_date" extensionName="RkwManagementConsultancy" />
                 </label>
-                <f:form.textfield property="startUpFoundationDate" value="{supportRequest.startUpFoundationDate->f:format.date()}" />
+                <f:form.textfield property="startUpFoundationDate" value="{supportRequest.startUpFoundationDate->f:format.date()}" placeholder="DD.MM.YYYY"/>
             </div>
         </div>
 
