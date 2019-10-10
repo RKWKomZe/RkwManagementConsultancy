@@ -263,35 +263,54 @@
             <div class="v320-1-of-2">
                 <span class="checkbox">
                     <label>
-                        <f:form.checkbox name="isStartUp" value="1" />
+                        <f:form.checkbox name="isStartUp" value="1" additionalAttributes="{onClick : 'toggleStartUp(this);'}" class="is-start-up-trigger"/>
                         <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up" extensionName="RkwManagementConsultancy" />
                     </label>
                 </span>
             </div>
         </div>
 
-        <div class="v320-1">
-            <div class="v320-1-of-2">
-                <label for="startUpFoundationDate">
-                    <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_foundation_date" extensionName="RkwManagementConsultancy" />
-                </label>
-                <f:form.textfield property="startUpFoundationDate" value="{supportRequest.startUpFoundationDate->f:format.date()}" placeholder="DD.MM.YYYY"/>
+        <div class="is-start-up">
+            <div class="v320-1">
+                <div class="v320-1-of-2">
+                    <label for="startUpFoundationDate">
+                        <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_foundation_date" extensionName="RkwManagementConsultancy" />
+                    </label>
+                    <f:form.textfield property="startUpFoundationDate" value="{supportRequest.startUpFoundationDate->f:format.date()}" placeholder="DD.MM.YYYY"/>
+                </div>
             </div>
-        </div>
 
-        <div class="v320-1">
-            <div class="v320-1-of-2">
-                <label for="startUpEmploymentStatusBefore">
-                    <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before" extensionName="RkwManagementConsultancy" />
-                </label>
-                <f:form.select property="startUpEmploymentStatusBefore" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.employed\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.unemployed\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.freelancer\", extensionName:\"RkwManagementConsultancy\")}'}" />
-            </div>
-            <div class="v320-2-of-2">
-                <label for="startUpIndependentWork">
-                    <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work" extensionName="RkwManagementConsultancy" />
-                </label>
-                <f:form.select property="startUpIndependentWork" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.no\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.sideline\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.mainOccupation\", extensionName:\"RkwManagementConsultancy\")}'}" />
+            <div class="v320-1">
+                <div class="v320-1-of-2">
+                    <label for="startUpEmploymentStatusBefore">
+                        <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before" extensionName="RkwManagementConsultancy" />
+                    </label>
+                    <f:form.select property="startUpEmploymentStatusBefore" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.employed\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.unemployed\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.freelancer\", extensionName:\"RkwManagementConsultancy\")}'}" />
+                </div>
+                <div class="v320-2-of-2">
+                    <label for="startUpIndependentWork">
+                        <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work" extensionName="RkwManagementConsultancy" />
+                    </label>
+                    <f:form.select property="startUpIndependentWork" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.no\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.sideline\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.mainOccupation\", extensionName:\"RkwManagementConsultancy\")}'}" />
+                </div>
             </div>
         </div>
     </fieldset>
 </fieldset>
+
+<script>
+    toggleStartUp(document.querySelector('.is-start-up-trigger'));
+
+    function toggleStartUp(checkbox){
+        if (checkbox.checked) {
+            document.querySelector('div.is-start-up').style.display = 'block';
+        } else {
+            document.querySelector('div.is-start-up').style.display = 'none';
+        }
+    }
+</script>
+<style>
+    .is-start-up {
+        display: none;
+    }
+</style>
