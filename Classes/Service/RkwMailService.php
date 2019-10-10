@@ -69,7 +69,7 @@ class RkwMailService implements \TYPO3\CMS\Core\SingletonInterface
                         'rkwMailService.confirmationUser.subject',
                         'rkw_management_consultancy',
                         null,
-                        $frontendUser->getTxRkwregistrationLanguageKey()
+                        ($frontendUser->getTxRkwregistrationLanguageKey()) ? $frontendUser->getTxRkwregistrationLanguageKey() : 'de'
                     )
                 );
 
