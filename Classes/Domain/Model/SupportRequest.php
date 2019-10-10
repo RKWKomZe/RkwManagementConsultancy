@@ -154,12 +154,20 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $iban = '';
 
     /**
-     * contactPersonName
+     * contactPersonFirstName
      *
      * @var string
-//     * @validate NotEmpty
+     * @validate NotEmpty
      */
-    protected $contactPersonName = '';
+    protected $contactPersonFirstName = '';
+
+    /**
+     * contactPersonLastName
+     *
+     * @var string
+     * @validate NotEmpty
+     */
+    protected $contactPersonLastName = '';
 
     /**
      * contactPersonPhone
@@ -187,7 +195,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * contactPersonEmail
      *
      * @var string
-//     * @validate NotEmpty, EmailAddress
+     * @validate NotEmpty, EmailAddress
      */
     protected $contactPersonEmail = '';
 
@@ -195,7 +203,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * startUpFoundationDate
      *
      * @var string
-     * @validate NotEmpty, \RKW\RkwManagementConsultancy\Validation\Validator\CustomDateValidator
+//     * @validate NotEmpty, \RKW\RkwManagementConsultancy\Validation\Validator\CustomDateValidator
      */
     protected $startUpFoundationDate = 0;
 
@@ -722,24 +730,45 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the contactPersonName
+     * Returns the contactPersonFirstName
      *
-     * @return string $contactPersonName
+     * @return string $contactPersonFirstName
      */
-    public function getContactPersonName()
+    public function getContactPersonFirstName()
     {
-        return $this->contactPersonName;
+        return $this->contactPersonFirstName;
     }
 
     /**
-     * Sets the contactPersonName
+     * Sets the contactPersonFirstName
      *
-     * @param string $contactPersonName
+     * @param string $contactPersonFirstName
      * @return void
      */
-    public function setContactPersonName($contactPersonName)
+    public function setContactPersonFirstName($contactPersonFirstName)
     {
-        $this->contactPersonName = $contactPersonName;
+        $this->contactPersonFirstName = $contactPersonFirstName;
+    }
+
+    /**
+     * Returns the contactPersonLastName
+     *
+     * @return string $contactPersonLastName
+     */
+    public function getContactPersonLastName()
+    {
+        return $this->contactPersonLastName;
+    }
+
+    /**
+     * Sets the contactPersonLastName
+     *
+     * @param string $contactPersonLastName
+     * @return void
+     */
+    public function setContactPersonLastName($contactPersonLastName)
+    {
+        $this->contactPersonLastName = $contactPersonLastName;
     }
 
     /**
@@ -1308,4 +1337,30 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->companyType = $companyType;
     }
+
+    /**
+     * Transforms date strings to DateTime object
+     *
+     * @return void
+     */
+    public function transformDates()
+    {
+        $this->foundationDate = $this->transformDate($this->foundationDate);
+        $this->startUpFoundationDate = $this->transformDate($this->startUpFoundationDate);
+        $this->consultingDateFrom = $this->transformDate($this->consultingDateFrom);
+        $this->consultingDateUpTo = $this->transformDate($this->consultingDateUpTo);
+    }
+
+    /**
+     * Transforms date string to DateTime object
+     *
+     * @param string $dateString
+     * @return \DateTime
+     */
+    protected function transformDate($dateString)
+    {
+        return \DateTime::createFromFormat('d.m.Y', $dateString)->getTimestamp();
+    }
+
+
 }

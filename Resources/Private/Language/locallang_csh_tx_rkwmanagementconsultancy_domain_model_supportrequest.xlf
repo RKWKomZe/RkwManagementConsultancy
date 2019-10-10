@@ -60,8 +60,11 @@
 			<trans-unit id="iban.description">
 				<source>iban</source>
 			</trans-unit>
-			<trans-unit id="contact_person_name.description">
-				<source>contactPersonName</source>
+			<trans-unit id="contact_person_last_name.description">
+				<source>contactPersonLastName</source>
+			</trans-unit>
+			<trans-unit id="contact_person_first_name.description">
+				<source>contactPersonFirstName</source>
 			</trans-unit>
 			<trans-unit id="contact_person_phone.description">
 				<source>contactPersonPhone</source>

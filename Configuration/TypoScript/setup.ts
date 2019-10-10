@@ -59,7 +59,7 @@ plugin.tx_rkwmanagementconsultancy {
     settings {
         termsPid = {$plugin.tx_rkwmanagementconsultancy.settings.termsPid}
         terms2Pid = {$plugin.tx_rkwmanagementconsultancy.settings.terms2Pid}
-#        storagePid = {$plugin.tx_rkwmanagementconsultancy.persistence.storagePid}
+        storagePid = {$plugin.tx_rkwmanagementconsultancy.persistence.storagePid}
         programStoragePid = {$plugin.tx_rkwmanagementconsultancy.settings.programStoragePid}
         includeRkwRegistrationPrivacy = {$plugin.tx_rkwmanagementconsultancy.settings.includeRkwRegistrationPrivacy}
     }

@@ -16,6 +16,8 @@ namespace RKW\RkwManagementConsultancy\Controller;
 
 use RKW\RkwBasics\Helper\Common;
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
+use RKW\RkwManagementConsultancy\Domain\Model\FrontendUser;
+use RKW\RkwManagementConsultancy\Domain\Model\SupportRequest;
 
 /**
  * SupportRequestController
@@ -133,20 +135,20 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
      * action create
      *
      * @param \RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest
+     * @param integer $terms
+     * @param integer $privacy
      * @return void
      */
-    public function createAction(\RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest)
+    public function createAction(\RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest, $terms = null, $privacy = null)
     {
         /** @var \RKW\RkwRegistration\Domain\Model\FrontendUser $frontendUser */
         $frontendUser = GeneralUtility::makeInstance('RKW\\RkwRegistration\\Domain\\Model\\FrontendUser');
         $frontendUser->setEmail($newSupportRequest->getContactPersonEmail());
-        $frontendUser->setFirstName($newSupportRequest->getManagerName());
+        $frontendUser->setFirstName($newSupportRequest->getContactPersonFirstName());
+        $frontendUser->setLastName($newSupportRequest->getContactPersonLastName());
 
         //  transform dates from string to timestamp
-        $newSupportRequest->setFoundationDate(\DateTime::createFromFormat('d.m.Y', $newSupportRequest->getFoundationDate())->getTimestamp());
-        $newSupportRequest->setStartUpFoundationDate(\DateTime::createFromFormat('d.m.Y', $newSupportRequest->getStartUpFoundationDate())->getTimestamp());
-        $newSupportRequest->setConsultingDateFrom(\DateTime::createFromFormat('d.m.Y', $newSupportRequest->getConsultingDateFrom())->getTimestamp());
-        $newSupportRequest->setConsultingDateUpTo(\DateTime::createFromFormat('d.m.Y', $newSupportRequest->getConsultingDateUpTo())->getTimestamp());
+        $newSupportRequest->transformDates();
 
         if ($this->settings['includeRkwRegistrationPrivacy']) {
             // add privacy info
@@ -165,10 +167,31 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         // persist first before sending mail!
         $this->persistenceManager->persistAll();
 
-        // ----------------------
+        $this->sendConfirmationMail($frontendUser, $newSupportRequest);
 
-        // send final confirmation mail to user
+        $this->sendNotificationMail($newSupportRequest);
+
+        $this->redirect('new');
+    }
+
+    /**
+     * Sends confirmation mail to frontenduser.
+     *
+     * @param \RKW\RkwRegistration\Domain\Model\FrontendUser $frontendUser
+     * @param \RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest
+     */
+    protected function sendConfirmationMail(\RKW\RkwRegistration\Domain\Model\FrontendUser $frontendUser, \RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest)
+    {
         $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_USER, [$frontendUser, $newSupportRequest]);
+    }
+
+    /**
+     * Sends notification mail to admin.
+     *
+     * @param \RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest
+     */
+    protected function sendNotificationMail(\RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest)
+    {
 
         // send information mail to admins
         $adminUidList = explode(',', $this->settings['mail']['backendUser']);
@@ -198,7 +221,5 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         }
 
         $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_ADMIN, [$backendUsers, $newSupportRequest]);
-
-        $this->redirect('new');
     }
 }
