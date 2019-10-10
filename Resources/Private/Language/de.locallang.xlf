@@ -9,11 +9,15 @@
             </trans-unit>
             <trans-unit id="tx_rkw_management_consultancy_domain_model_request.description">
                 <source>Provides a form for management consultancy</source>
-                <target>Diese Extension betreibt ein Antragsformular für Unternehmensberatung</target>
+                <target>Diese Erweiterung beinhaltet ein Formular zur Beantragung einer Unternehmensberatung.</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
+                <source>Support program</source>
+                <target>Förderprogramm</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
                 <source>Support Request</source>
-                <target>Unterstützungsanfrage</target>
+                <target>Beratungsanfrage</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
                 <source>Type of consultation</source>
@@ -25,27 +29,27 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.misc">
                 <source>Misc</source>
-                <target>Weiteres</target>
+                <target>Sonstiges</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
                 <source>-- Please choose --</source>
                 <target>-- Bitte wählen --</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up">
-                <source>Is Start Up</source>
-				<target>Ja, es ist ein Unternehmen in Gründung.</target>
+                <source>Is Start Up?</source>
+				<target>Befindet sich das Unternehmen in Gründung?</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.99">
                 <source>Not a startup</source>
-				<target>Ist kein Unternehmen in Gründung</target>
+				<target>Nein, es ist kein Unternehmen in Gründung.</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.1">
                 <source>Is Start Up</source>
-				<target>Ist kein Unternehmen in Gründung</target>
+				<target>Ja, es ist ein Unternehmen in Gründung.</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.name">
                 <source>Name</source>
-                <target>Unternehmen</target>
+                <target>Name des Unternehmens</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.address">
                 <source>Address</source>
@@ -81,7 +85,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation">
                 <source>Sole Representation</source>
-                <target>Einzelvertretung</target>
+                <target>Einzelvertretungsberechtigung</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1">
                 <source>Yes</source>
@@ -478,7 +482,7 @@
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.contactPersonEmail">
                 <source>Contact Person Email</source>
-                <target>Kontaktperson: E-Mail</target>
+                <target>Kontaktperson: E-Mail-Adresse</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.startUpFoundationDate">
                 <source>Start Up Foundation Date</source>
@@ -583,7 +587,7 @@
             </trans-unit>
             <trans-unit id="templates_email_confirmationUser.text1">
                 <source>thank you for your support request.</source>
-                <target>vielen Dank für Ihren Antrag auf ein Förderprogramm des RKW Kompetenzzentrums.</target>
+                <target>vielen Dank für Ihren Antrag auf ein Förderprogramm des RKW.</target>
             </trans-unit>
             <trans-unit id="templates_email_confirmationUser.text2">
                 <source>You will get an answer to your support request shortly.</source>

@@ -7,7 +7,7 @@
 =============================================================
 <vh:frontend.translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.applicant" languageKey="{language}" extensionName="rkwManagementConsultancy"/>
 =============================================================
-<vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportprogramme" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.supportProgramme.title}
+<vh:frontend.translate key="tx_rkwfeecalculator_domain_model_calculation.form.selected_program" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.supportProgramme.title}
 <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.name" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.name}
 <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.address" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.address}
 <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.zip" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.zip}
@@ -41,7 +41,7 @@
 <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_consulting" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.consulting.title}
 <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: <!-- @toDo -->
 <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.consultingDateFrom}
-<vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_up_to" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.consultingUpTo}
+<vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_up_to" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: <f:format.date format="d.m.Y">{supportRequest.consultingUpTo}</f:format.date>
 <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_description" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.consultingDescription}
 
 =============================================================
@@ -68,7 +68,7 @@
 <f:section name="Html">
 	<h2><vh:frontend.translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.applicant" languageKey="{language}" extensionName="rkwManagementConsultancy"/></h2>
 	<p>
-        <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportprogramme" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.supportProgramme.title}<br/>
+        <vh:frontend.translate key="tx_rkwfeecalculator_domain_model_calculation.form.selected_program" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.supportProgramme.title}<br/>
         <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.name" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.name}<br/>
         <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.address" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.address}
         <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.zip" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.zip}
@@ -99,7 +99,7 @@
 	
 	<h2><vh:frontend.translate key="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.consulting" languageKey="{language}" extensionName="rkwManagementConsultancy" /></h2>
 	<p>
-        <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_consulting" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.consulting.title}<br/>
+        <vh:frontend.translate key="tx_rkwfeecalculator_domain_model_program.consulting" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.consulting.title}<br/>
         <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: <!-- @toDo --><br/>
         <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.consultingDateFrom}<br/>
         <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_up_to" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: {supportRequest.consultingUpTo}<br/>
@@ -124,6 +124,5 @@
         <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: <f:if condition="{supportRequest.earlyStartDesired} == 1"><f:then><vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.1" languageKey="{language}" extensionName="rkwManagementConsultancy"/></f:then><f:else><vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.99" languageKey="{language}" extensionName="rkwManagementConsultancy"/></f:else></f:if><br>
         <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed" languageKey="{language}" extensionName="rkwManagementConsultancy"/>: <vh:frontend.translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.{supportRequest.sendDocumentsAllowed}" languageKey="{language}" extensionName="rkwManagementConsultancy"/><br/>
     </p>
-
 
 </f:section>

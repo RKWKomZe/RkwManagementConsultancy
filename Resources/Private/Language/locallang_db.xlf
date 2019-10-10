@@ -12,6 +12,9 @@
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
 				<source>Support Request</source>
 			</trans-unit>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
+				<source>Support Program</source>
+			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
                 <source>Type of consultation</source>
             </trans-unit>
@@ -216,7 +219,6 @@
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.terms">
                 <source>Terms</source>
             </trans-unit>
-
 
             <!-- flexform -->
 

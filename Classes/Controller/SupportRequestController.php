@@ -13,6 +13,8 @@ namespace RKW\RkwManagementConsultancy\Controller;
  *
  * The TYPO3 project - inspiring people to share!
  */
+
+use RKW\RkwBasics\Helper\Common;
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -95,9 +97,8 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
      */
     public function newAction()
     {
-        /** @var \TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings $querySettings */
-        $querySettings = $this->objectManager->get('TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings');
-        $querySettings->setRespectStoragePage(false);
+        $querySettings = $this->supportProgrammeRepository->createQuery()->getQuerySettings();
+        $querySettings->setStoragePageIds([$this->settings['programStoragePid']]);
         $this->supportProgrammeRepository->setDefaultQuerySettings($querySettings);
 
         $this->view->assign('supportProgrammeList', $this->supportProgrammeRepository->findAll());
@@ -157,7 +158,10 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
                 'tx_rkwmanagementconsultancy_controller_supportrequest.success.requestCreated', 'rkw_management_consultancy'
             )
         );
+
+        $newSupportRequest->setPid((int)($this->settings['storagePid']));
         $this->supportRequestRepository->add($newSupportRequest);
+
         // persist first before sending mail!
         $this->persistenceManager->persistAll();
 

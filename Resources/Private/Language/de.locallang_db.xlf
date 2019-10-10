@@ -11,12 +11,15 @@
 				<source>Provides a form for management consultancy</source>
 			    <target>Diese Extension betreibt ein Antragsformular für Unternehmensberatung</target>
 			</trans-unit>
-
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
+                <source>Support program</source>
+                <target>Förderprogramm</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
 				<source>Support Request</source>
-				<target>Unterstützungsanfrage</target>
+				<target>Beratungsanfrage</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
                 <source>Type of consultation</source>
                 <target>Art der Beratung</target>
             </trans-unit>
@@ -26,7 +29,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.misc">
                 <source>Misc</source>
-                <target>Weiteres</target>
+                <target>Sonstiges</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
                 <source>-- Please choose --</source>
@@ -82,7 +85,7 @@
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation">
 				<source>Sole Representation</source>
-				<target>Einzelvertretung</target>
+				<target>Einzelvertretungsberechtigung</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1">
                 <source>Yes</source>
@@ -226,11 +229,11 @@
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant1_accreditation_number">
 				<source>Consultant1 Accreditation Number</source>
-				<target>Akkr-Nr.</target>
+				<target>Akkr-Nr. (Berater)</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant2_accreditation_number">
 				<source>Consultant2 Accreditation Number</source>
-				<target>Akkr-Nr.</target>
+				<target>Akkr-Nr. (2. Berater)</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_fee">
 				<source>Consultant Fee</source>

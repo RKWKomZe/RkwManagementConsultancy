@@ -19,6 +19,8 @@ plugin.tx_rkwmanagementconsultancy {
         termsPid =
         # cat=plugin.tx_rkwmanagementconsultancy; type=integer; label=PID for terms and conditions (AGB)
         terms2Pid =
+        # cat=plugin.tx_rkwmanagementconsultancy; type=integer; label=PID for support programs
+        programStoragePid =
         # cat=plugin.tx_rkwmanagementconsultancy; type=integer; label=Include RkwRegistration privacy
         includeRkwRegistrationPrivacy = 1
     }

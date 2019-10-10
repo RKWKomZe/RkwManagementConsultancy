@@ -9,6 +9,9 @@
 			<trans-unit id="tx_rkw_management_consultancy_domain_model_request.description">
 				<source>Provides a form for mangement consultancy with a Backend Module for evaluation and csv export</source>
 			</trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
+                <source>Support program</source>
+            </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
                 <source>Support Request</source>
             </trans-unit>
@@ -154,7 +157,7 @@
                 <source>I need a RKW recommendation</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.2">
-                <source>I've decided for a special onsultant</source>
+                <source>I've decided for a special consultant</source>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.3">
                 <source>I've NOT decided for a special consultant</source>
