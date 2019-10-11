@@ -9,52 +9,15 @@
             </trans-unit>
             <trans-unit id="tx_rkw_management_consultancy_domain_model_request.description">
                 <source>Provides a form for management consultancy</source>
-                <target>Diese Extension betreibt ein Antragsformular für Unternehmensberatung</target>
-            </trans-unit>
-
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform">
-                <source>Legal Form</source>
-                <target>Rechtsform</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.title">
-                <source>Title</source>
-                <target>Name</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.description">
-                <source>Description</source>
-                <target>Beschreibung</target>
+                <target>Diese Erweiterung beinhaltet ein Formular zur Beantragung einer Unternehmensberatung.</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
-                <source>Support Programme</source>
+                <source>Support program</source>
                 <target>Förderprogramm</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.title">
-                <source>Title</source>
-                <target>Name</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.description">
-                <source>Description</source>
-                <target>Beschreibung</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.consulting">
-                <source>Consulting</source>
-                <target>Art der Beratung</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting">
-                <source>Consulting</source>
-                <target>Art der Beratung</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.title">
-                <source>Title</source>
-                <target>Name</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.duration">
-                <source>Duration</source>
-                <target>Dauer</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
                 <source>Support Request</source>
-                <target>Unterstützungsanfrage</target>
+                <target>Beratungsanfrage</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
                 <source>Type of consultation</source>
@@ -66,27 +29,27 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.misc">
                 <source>Misc</source>
-                <target>Weiteres</target>
+                <target>Sonstiges</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
-                <source>--- please choose ---</source>
-                <target>--- Bitte wählen ---</target>
+                <source>-- Please choose --</source>
+                <target>-- Bitte wählen --</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up">
-                <source>Is Start Up</source>
-                <target>Ist ein Startup</target>
+                <source>Is Start Up?</source>
+				<target>Befindet sich das Unternehmen in Gründung?</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.99">
                 <source>Not a startup</source>
-                <target>Ist kein startup</target>
+				<target>Nein, es ist kein Unternehmen in Gründung.</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.1">
                 <source>Is Start Up</source>
-                <target>Ist ein Startup</target>
+				<target>Ja, es ist ein Unternehmen in Gründung.</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.name">
                 <source>Name</source>
-                <target>Unternehmen</target>
+                <target>Name des Unternehmens</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.address">
                 <source>Address</source>
@@ -122,7 +85,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation">
                 <source>Sole Representation</source>
-                <target>Einzelvertretung</target>
+                <target>Einzelvertretungsberechtigung</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1">
                 <source>Yes</source>
@@ -164,9 +127,13 @@
                 <source>IBAN</source>
                 <target>IBAN</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_name">
-                <source>Contact Person Name</source>
-                <target>Ansprechpartner für RKW</target>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_last_name">
+                <source>Contact Person Last Name</source>
+                <target>Ansprechpartner für RKW (Nachname)</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_first_name">
+                <source>Contact Person First Name</source>
+                <target>Ansprechpartner für RKW (Vorname)</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_phone">
                 <source>Contact Person Phone</source>
@@ -214,7 +181,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.sideline">
                 <source>Sideline</source>
-                <target>Ja - nebenerwerb</target>
+                <target>Ja - im Nebenerwerb</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.mainOccupation">
                 <source>Main Occupation</source>
@@ -222,7 +189,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase">
                 <source>Entire Consultation Phase</source>
-                <target>Beratungsdauer (Tagwerke a' 8h)</target>
+                <target>Beratungsdauer (Tagwerke á 8h)</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from">
                 <source>Consulting Date From</source>
@@ -289,8 +256,8 @@
                 <target>Vorzeitiger Maßnahmebeginn erwünscht</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint1">
-                <source>It's possbile to start very early in practice. There is no legal claim.</source>
-                 <target>Für die Thüringer Beratungs- und Gründerrichtlinie kann ein vorzeitiger Maßnahmebeginn beantrag werden! Möchten Sie auf eigenes Risiko einen vorzeitigen Maßnahmebeginn beantragen?</target>
+                <source>It's possible to start prematurely. There is no legal claim.</source>
+                 <target>Für die %s kann ein vorzeitiger Maßnahmebeginn beantragt werden! Möchten Sie auf eigenes Risiko einen vorzeitigen Maßnahmebeginn beantragen?</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.hint2">
                 <source>You do this on your own risk.</source>
@@ -324,10 +291,10 @@
                 <source>Consulting</source>
                 <target>Beratung</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.legal_form">
-                <source>Legal Form</source>
-                <target>Rechtsform</target>
-            </trans-unit>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_type">
+				<source>Company type</source>
+				<target>Rechtsform</target>
+			</trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.privacy">
                 <source>Privacy</source>
                 <target>Datenschutz</target>
@@ -373,17 +340,18 @@
                 <target>Auswählen</target>
             </trans-unit>
 
-            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.noDescription">
-                <source>No programme description available</source>
-                <target>Es ist keine fortführende Beschreibung vorhanden.</target>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.headline">
+                <source>Consulting request within "%s"</source>
+                <target>Beratungsanfrage im Rahmen des Programms "%s"</target>
             </trans-unit>
+
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.send">
                 <source>Send</source>
                 <target>Antrag abschicken</target>
             </trans-unit>
 
-            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.aplicant">
-                <source>Aplicant</source>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.applicant">
+                <source>applicant</source>
                 <target>Antragsteller</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.consulting">
@@ -394,14 +362,12 @@
                 <source>Consultant</source>
                 <target>Berater</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.closing">
-                <source>Closing</source>
-                <target>Abschließend</target>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.additional">
+                <source>Additional information</source>
+                <target>Zusätzliche Angaben</target>
             </trans-unit>
-
-
-            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseLegalForm">
-                <source>Choose legal form</source>
+            <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseCompanyType">
+                <source>Choose company type</source>
                 <target>Rechtsform wählen</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_partials_supportrequest_requestForm.chooseConsulting">
@@ -502,25 +468,29 @@
                 <source>IBAN</source>
                 <target>IBAN</target>
             </trans-unit>
-            <trans-unit id="form.error.newSupportRequest.contactPersonName">
-                <source>Contact Person Name</source>
-                <target>Kontaktperson: Name</target>
+            <trans-unit id="form.error.newSupportRequest.contactPersonLastName">
+                <source>Contact Person Last Name</source>
+                <target>Ansprechpartner (Nachname)</target>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.contactPersonFirstName">
+                <source>Contact Person First Name</source>
+                <target>Ansprechpartner (Vorname)</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.contactPersonPhone">
                 <source>Contact Person Phone</source>
-                <target>Kontaktperson: Telefonnummer</target>
+                <target>Ansprechpartner (Telefonnummer)</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.contactPersonFax">
                 <source>Contact Person Fax</source>
-                <target>Kontaktperson: Faxnummer</target>
+                <target>Ansprechpartner (Faxnummer)</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.contactPersonMobile">
                 <source>Contact Person Mobile</source>
-                <target>Kontaktperson: Mobilnummer</target>
+                <target>Ansprechpartner (Mobilnummer)</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.contactPersonEmail">
                 <source>Contact Person Email</source>
-                <target>Kontaktperson: E-Mail</target>
+                <target>Ansprechpartner (E-Mail-Adresse)</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.startUpFoundationDate">
                 <source>Start Up Foundation Date</source>
@@ -602,8 +572,8 @@
                 <source>Consulting</source>
                 <target>Beratung</target>
             </trans-unit>
-            <trans-unit id="form.error.newSupportRequest.legalForm">
-                <source>Legal Form</source>
+            <trans-unit id="form.error.newSupportRequest.companyType">
+                <source>Company type</source>
                 <target>Rechtsform</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.privacy">
@@ -625,7 +595,7 @@
             </trans-unit>
             <trans-unit id="templates_email_confirmationUser.text1">
                 <source>thank you for your support request.</source>
-                <target>vielen Dank für Ihren Antrag auf ein Förderprogramm des RKW Kompetenzzentrums.</target>
+                <target>vielen Dank für Ihren Antrag auf ein Förderprogramm des RKW.</target>
             </trans-unit>
             <trans-unit id="templates_email_confirmationUser.text2">
                 <source>You will get an answer to your support request shortly.</source>

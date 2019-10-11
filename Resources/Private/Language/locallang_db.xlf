@@ -9,39 +9,11 @@
 			<trans-unit id="tx_rkw_management_consultancy_domain_model_request.description">
 				<source>Provides a form for mangement consultancy with a Backend Module for evaluation and csv export</source>
 			</trans-unit>
-
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform">
-				<source>Legal Form</source>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.description">
-				<source>Description</source>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
-				<source>Support Programme</source>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.title">
-                <source>Title</source>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.description">
-                <source>Description</source>
-            </trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.consulting">
-				<source>Consulting</source>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting">
-				<source>Consulting</source>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.duration">
-				<source>Duration</source>
-			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
 				<source>Support Request</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
+				<source>Support Program</source>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
                 <source>Type of consultation</source>
@@ -53,7 +25,7 @@
                 <source>Misc</source>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
-                <source>--- please choose ---</source>
+                <source>-- Please choose --</source>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up">
 				<source>Is Start Up</source>
@@ -124,8 +96,11 @@
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.iban">
 				<source>Iban</source>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_name">
-				<source>Contact Person Name</source>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_last_name">
+				<source>Contact Person Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_first_name">
+				<source>Contact Person First Name</source>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_phone">
 				<source>Contact Person Phone</source>
@@ -238,8 +213,8 @@
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting">
 				<source>Consulting</source>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.legal_form">
-				<source>Legal Form</source>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_type">
+				<source>Company type</source>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.privacy">
                 <source>Privacy</source>
@@ -247,7 +222,6 @@
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.terms">
                 <source>Terms</source>
             </trans-unit>
-
 
             <!-- flexform -->
 

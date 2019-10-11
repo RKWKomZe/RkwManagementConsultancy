@@ -24,4 +24,4 @@ namespace RKW\RkwManagementConsultancy\Domain\Repository;
  */
 class SupportRequestRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
-    }
+}

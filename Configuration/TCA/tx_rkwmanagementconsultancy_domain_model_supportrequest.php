@@ -2,7 +2,7 @@
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest',
-        'label' => 'is_start_up',
+        'label' => 'name',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -14,23 +14,23 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
-        'searchFields' => 'is_start_up,name,address,zip,city,foundation_date,revenue,balance_sum,number_of_employees,manager_name,sole_representation,deduction_right,business_purpose,company_shares,principle_bank,bic,iban,contact_person_name,contact_person_phone,contact_person_fax,contact_person_mobile,contact_person_email,start_up_foundation_date,start_up_employment_status_before,start_up_independent_work,entire_consultation_phase,consulting_date_from,consulting_date_up_to,consulting_description,consultant_type,consultant_company,consultant_name1,consultant_name2,consultant1_accreditation_number,consultant2_accreditation_number,consultant_fee,consultant_phone,consultant_email,early_start_desired,send_documents_allowed,support_programme,consulting,legal_form',
+        'searchFields' => 'is_start_up,name,address,zip,city,foundation_date,revenue,balance_sum,number_of_employees,manager_name,sole_representation,deduction_right,business_purpose,company_shares,principle_bank,bic,iban,contact_person_last_name,contact_person_first_name,contact_person_phone,contact_person_fax,contact_person_mobile,contact_person_email,start_up_foundation_date,start_up_employment_status_before,start_up_independent_work,entire_consultation_phase,consulting_date_from,consulting_date_up_to,consulting_description,consultant_type,consultant_company,consultant_name1,consultant1_accreditation_number,consultant_name2,consultant2_accreditation_number,consultant_fee,consultant_phone,consultant_email,early_start_desired,send_documents_allowed,support_programme,consulting,company_type',
         'iconfile' => 'EXT:rkw_management_consultancy/Resources/Public/Icons/tx_rkwmanagementconsultancy_domain_model_supportrequest.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, is_start_up, name, address, zip, city, foundation_date, revenue, balance_sum, number_of_employees, manager_name, sole_representation, deduction_right, business_purpose, company_shares, principle_bank, bic, iban, contact_person_name, contact_person_phone, contact_person_fax, contact_person_mobile, contact_person_email, start_up_foundation_date, start_up_employment_status_before, start_up_independent_work, entire_consultation_phase, consulting_date_from, consulting_date_up_to, consulting_description, consultant_type, consultant_company, consultant_name1, consultant_name2, consultant1_accreditation_number, consultant2_accreditation_number, consultant_fee, consultant_phone, consultant_email, early_start_desired, send_documents_allowed, support_programme, consulting, legal_form',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, is_start_up, name, address, zip, city, foundation_date, revenue, balance_sum, number_of_employees, manager_name, sole_representation, deduction_right, business_purpose, company_shares, principle_bank, bic, iban, contact_person_last_name,contact_person_first_name, contact_person_phone, contact_person_fax, contact_person_mobile, contact_person_email, start_up_foundation_date, start_up_employment_status_before, start_up_independent_work, entire_consultation_phase, consulting_date_from, consulting_date_up_to, consulting_description, consultant_type, consultant_company, consultant_name1, consultant1_accreditation_number, consultant_name2, consultant2_accreditation_number, consultant_fee, consultant_phone, consultant_email, early_start_desired, send_documents_allowed, support_programme, consulting, company_type',
     ],
     'types' => [
         '1' => [
             'showitem' => '
             sys_language_uid, l10n_parent, l10n_diffsource, hidden, 
-            support_programme, is_start_up, name, address, zip, city, foundation_date, revenue, balance_sum, number_of_employees, legal_form, manager_name, sole_representation, deduction_right, business_purpose, company_shares, principle_bank, bic, iban, contact_person_name, contact_person_phone, contact_person_fax, contact_person_mobile, contact_person_email, start_up_foundation_date, start_up_employment_status_before, start_up_independent_work, 
+            support_programme, is_start_up, name, address, zip, city, foundation_date, revenue, balance_sum, number_of_employees, company_type, manager_name, sole_representation, deduction_right, business_purpose, company_shares, principle_bank, bic, iban, contact_person_last_name,contact_person_first_name, contact_person_phone, contact_person_fax, contact_person_mobile, contact_person_email, start_up_foundation_date, start_up_employment_status_before, start_up_independent_work, 
             
              --div--;LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation,
             entire_consultation_phase, consulting_date_from, consulting_date_up_to, consulting_description, 
             
              --div--;LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.consultant,
-            consulting, consultant_type, consultant_company, consultant_name1, consultant_name2, consultant1_accreditation_number, consultant2_accreditation_number, consultant_fee, consultant_phone, consultant_email, 
+            consulting, consultant_type, consultant_company, consultant_name1, consultant1_accreditation_number, consultant_name2, consultant2_accreditation_number, consultant_fee, consultant_phone, consultant_email, 
             
             --div--;LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.misc,
             early_start_desired, send_documents_allowed, 
@@ -94,31 +94,25 @@ return [
                 ],
             ],
         ],
-        'is_start_up' => [
-	        'exclude' => true,
-	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up',
-	        'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
+        'is_start_up' => array(
+            'exclude' => false,
+            'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up',
+            'config'  => array(
+                'type'    => 'check',
                 'default' => 0,
-                'items' => [
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.no', 99],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.yes', 1],
-                ]
-			]
-	    ],
+            ),
+        ),
 	    'name' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.name',
 	        'config' => [
 			    'type' => 'input',
 			    'size' => 30,
-			    'eval' => 'trim,required'
+//			    'eval' => 'trim,required'
 			],
 	    ],
 	    'address' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.address',
 	        'config' => [
 			    'type' => 'input',
@@ -127,7 +121,7 @@ return [
 			],
 	    ],
 	    'zip' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.zip',
 	        'config' => [
 			    'type' => 'input',
@@ -136,7 +130,7 @@ return [
 			]
 	    ],
 	    'city' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.city',
 	        'config' => [
 			    'type' => 'input',
@@ -145,17 +139,19 @@ return [
 			],
 	    ],
 	    'foundation_date' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_date',
-	        'config' => [
-                'type' => 'text',
-                'cols' => 40,
-                'rows' => 15,
-                'eval' => 'trim,required'
-			],
+            'config' => [
+                'type' => 'input',
+                'size' => 13,
+                'max' => 20,
+                'eval' => 'datetime, required',
+                'checkbox' => 0,
+                'default' => 0,
+            ],
 	    ],
 	    'revenue' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.revenue',
 	        'config' => [
 			    'type' => 'input',
@@ -164,7 +160,7 @@ return [
 			],
 	    ],
 	    'balance_sum' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.balance_sum',
 	        'config' => [
 			    'type' => 'input',
@@ -173,7 +169,7 @@ return [
 			],
 	    ],
 	    'number_of_employees' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.number_of_employees',
 	        'config' => [
 			    'type' => 'input',
@@ -182,7 +178,7 @@ return [
 			]
 	    ],
 	    'manager_name' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.manager_name',
 	        'config' => [
 			    'type' => 'input',
@@ -191,35 +187,23 @@ return [
 			],
 	    ],
 	    'sole_representation' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation',
-	        'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
+            'config'  => array(
+                'type'    => 'check',
                 'default' => 0,
-                'items' => [
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.99', 99],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1', 1],
-                ]
-			]
+            ),
 	    ],
 	    'deduction_right' => [
-	        'exclude' => true,
+	        'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right',
-	        'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
+            'config'  => array(
+                'type'    => 'check',
                 'default' => 0,
-                'items' => [
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.99', 99],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.1', 1],
-                ]
-			]
+            ),
 	    ],
 	    'business_purpose' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.business_purpose',
 	        'config' => [
 			    'type' => 'input',
@@ -228,7 +212,7 @@ return [
 			],
 	    ],
 	    'company_shares' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.company_shares',
 	        'config' => [
 			    'type' => 'input',
@@ -237,7 +221,7 @@ return [
 			],
 	    ],
 	    'principle_bank' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.principle_bank',
 	        'config' => [
 			    'type' => 'input',
@@ -246,7 +230,7 @@ return [
 			],
 	    ],
 	    'bic' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.bic',
 	        'config' => [
 			    'type' => 'input',
@@ -255,7 +239,7 @@ return [
 			],
 	    ],
 	    'iban' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.iban',
 	        'config' => [
 			    'type' => 'input',
@@ -263,17 +247,26 @@ return [
 			    'eval' => 'trim'
 			],
 	    ],
-	    'contact_person_name' => [
-	        'exclude' => true,
-	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_name',
+	    'contact_person_last_name' => [
+            'exclude' => false,
+	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_last_name',
 	        'config' => [
 			    'type' => 'input',
 			    'size' => 30,
 			    'eval' => 'trim,required'
 			],
 	    ],
+        'contact_person_first_name' => [
+            'exclude' => false,
+            'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_first_name',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim,required'
+            ],
+        ],
 	    'contact_person_phone' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_phone',
 	        'config' => [
 			    'type' => 'input',
@@ -282,7 +275,7 @@ return [
 			],
 	    ],
 	    'contact_person_fax' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_fax',
 	        'config' => [
 			    'type' => 'input',
@@ -291,7 +284,7 @@ return [
 			],
 	    ],
         'contact_person_mobile' => [
-            'exclude' => true,
+            'exclude' => false,
             'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_mobile',
             'config' => [
                 'type' => 'input',
@@ -300,7 +293,7 @@ return [
             ],
         ],
 	    'contact_person_email' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_email',
 	        'config' => [
 			    'type' => 'input',
@@ -309,19 +302,19 @@ return [
 			],
 	    ],
 	    'start_up_foundation_date' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_foundation_date',
-	        'config' => [
+            'config' => [
                 'type' => 'input',
                 'size' => 13,
                 'max' => 20,
-                'eval' => 'datetime, required',
+                'eval' => 'datetime',
                 'checkbox' => 0,
                 'default' => 0,
-			],
+            ],
 	    ],
 	    'start_up_employment_status_before' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before',
 	        'config' => [
                 'type' => 'select',
@@ -336,7 +329,7 @@ return [
 			]
 	    ],
 	    'start_up_independent_work' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work',
 	        'config' => [
                 'type' => 'select',
@@ -351,42 +344,40 @@ return [
 			]
 	    ],
         'entire_consultation_phase' => [
-            'exclude' => true,
+            'exclude' => false,
             'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase',
             'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'default' => 0,
-                'items' => [
-                    ['@toDo', 0],
-                    ['@toDo', 1],
-                    ['@toDo', 2],
-                    ['@toDo', 3],
-                ]
+                'type' => 'input',
+                'size' => 13,
+                'eval' => 'trim'
             ],
         ],
 	    'consulting_date_from' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from',
-	        'config' => [
-                'type' => 'text',
-                'cols' => 40,
-                'rows' => 15,
-                'eval' => 'trim,required'
-			],
+            'config' => [
+                'type' => 'input',
+                'size' => 13,
+                'max' => 20,
+                'eval' => 'datetime, required',
+                'checkbox' => 0,
+                'default' => 0,
+            ],
 	    ],
 	    'consulting_date_up_to' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_up_to',
-	        'config' => [
-                'type' => 'text',
-                'cols' => 40,
-                'rows' => 15,
-                'eval' => 'trim,required'
-			],
+            'config' => [
+                'type' => 'input',
+                'size' => 13,
+                'max' => 20,
+                'eval' => 'datetime, required',
+                'checkbox' => 0,
+                'default' => 0,
+            ],
 	    ],
 	    'consulting_description' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_description',
 	        'config' => [
 			    'type' => 'text',
@@ -395,8 +386,17 @@ return [
 			    'eval' => 'trim,required'
 			]
 	    ],
-	    'consultant_type' => [
-	        'exclude' => true,
+        'consulting' => [
+            'exclude' => false,
+            'label' => 'LLL:EXT:rkw_feecalculator/Resources/Private/Language/locallang_db.xlf:tx_rkwfeecalculator_domain_model_program.consulting',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'foreign_table' => 'tx_rkwfeecalculator_domain_model_consulting',
+            ],
+        ],
+        'consultant_type' => [
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type',
 	        'config' => [
                 'type' => 'select',
@@ -407,29 +407,39 @@ return [
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.1', 1],
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.2', 2],
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.3', 3],
-                ]
+                ],
+                'eval' => 'required'
 			]
 	    ],
 	    'consultant_company' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_company',
 	        'config' => [
 			    'type' => 'input',
 			    'size' => 30,
-			    'eval' => 'trim,required'
+			    'eval' => 'trim'
 			],
 	    ],
 	    'consultant_name1' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_name1',
 	        'config' => [
 			    'type' => 'input',
 			    'size' => 30,
-			    'eval' => 'trim,required'
+			    'eval' => 'trim'
 			],
 	    ],
+        'consultant1_accreditation_number' => [
+            'exclude' => false,
+            'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant1_accreditation_number',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
 	    'consultant_name2' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_name2',
 	        'config' => [
 			    'type' => 'input',
@@ -437,17 +447,8 @@ return [
 			    'eval' => 'trim'
 			],
 	    ],
-	    'consultant1_accreditation_number' => [
-	        'exclude' => true,
-	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant1_accreditation_number',
-	        'config' => [
-			    'type' => 'input',
-			    'size' => 30,
-			    'eval' => 'trim,required'
-			],
-	    ],
 	    'consultant2_accreditation_number' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant2_accreditation_number',
 	        'config' => [
 			    'type' => 'input',
@@ -456,48 +457,42 @@ return [
 			],
 	    ],
 	    'consultant_fee' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_fee',
 	        'config' => [
 			    'type' => 'input',
 			    'size' => 30,
-			    'eval' => 'trim,required'
+			    'eval' => 'trim'
 			],
 	    ],
 	    'consultant_phone' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_phone',
 	        'config' => [
 			    'type' => 'input',
 			    'size' => 30,
-			    'eval' => 'trim,required'
+			    'eval' => 'trim'
 			],
 	    ],
 	    'consultant_email' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_email',
 	        'config' => [
 			    'type' => 'input',
 			    'size' => 30,
-			    'eval' => 'trim,required'
+			    'eval' => 'trim'
 			],
 	    ],
 	    'early_start_desired' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired',
-	        'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
+            'config'  => array(
+                'type'    => 'check',
                 'default' => 0,
-                'items' => [
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.1', 1],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.99', 99],
-                ]
-			]
+            ),
 	    ],
 	    'send_documents_allowed' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed',
 	        'config' => [
                 'type' => 'select',
@@ -511,41 +506,27 @@ return [
 			]
 	    ],
 	    'support_programme' => [
-	        'exclude' => true,
+            'exclude' => false,
 	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.support_programme',
 	        'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_rkwmanagementconsultancy_domain_model_supportprogramme',
+                'foreign_table' => 'tx_rkwfeecalculator_domain_model_program',
                 'minitems' => 1,
                 'maxitems' => 1,
 			],
 	    ],
-	    'consulting' => [
-	        'exclude' => true,
-	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting',
-	        'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_rkwmanagementconsultancy_domain_model_consulting',
-            //    'foreign_table_where' => // @toDo: Where field:support_programme = consulting.support_programme
-                'minitems' => 1,
-                'maxitems' => 1,
-			],
-	    ],
-	    'legal_form' => [
-	        'exclude' => true,
-	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.legal_form',
+	    'company_type' => [
+            'exclude' => false,
+	        'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.company_type',
 	        'config' => [
 			    'type' => 'select',
                 'renderType' => 'selectSingle',
-			    'foreign_table' => 'tx_rkwmanagementconsultancy_domain_model_legalform',
-			    'minitems' => 1,
-			    'maxitems' => 1,
+			    'foreign_table' => 'tx_rkwbasics_domain_model_companytype',
 			],
 	    ],
         'privacy' => [
-            'exclude' => true,
+            'exclude' => false,
             'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.privacy',
             'config' => [
                 'type' => 'check',
@@ -557,7 +538,7 @@ return [
             ],
         ],
         'terms' => [
-            'exclude' => true,
+            'exclude' => false,
             'label' => 'LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.terms',
             'config' => [
                 'type' => 'check',

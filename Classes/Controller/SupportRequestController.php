@@ -13,8 +13,12 @@ namespace RKW\RkwManagementConsultancy\Controller;
  *
  * The TYPO3 project - inspiring people to share!
  */
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
+
+use RKW\RkwBasics\Helper\Common;
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
+use RKW\RkwManagementConsultancy\Domain\Model\FrontendUser;
+use RKW\RkwManagementConsultancy\Domain\Model\SupportRequest;
+
 /**
  * SupportRequestController
  *
@@ -25,6 +29,7 @@ use \TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
+
     /**
      * Signal name for use in ext_localconf.php
      *
@@ -42,26 +47,18 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
     /**
      * supportProgrammeRepository
      *
-     * @var \RKW\RkwManagementConsultancy\Domain\Repository\SupportProgrammeRepository
+     * @var \RKW\RkwFeecalculator\Domain\Repository\ProgramRepository
      * @inject
      */
     protected $supportProgrammeRepository = null;
 
     /**
-     * consultingRepository
+     * companyTypeRepository
      *
-     * @var \RKW\RkwManagementConsultancy\Domain\Repository\ConsultingRepository
+     * @var \RKW\RkwBasics\Domain\Repository\CompanyTypeRepository
      * @inject
      */
-    protected $consultingRepository = null;
-
-    /**
-     * legalFormRepository
-     *
-     * @var \RKW\RkwManagementConsultancy\Domain\Repository\LegalFormRepository
-     * @inject
-     */
-    protected $legalFormRepository = null;
+    protected $companyTypeRepository = null;
 
     /**
      * supportRequestRepository
@@ -102,18 +99,20 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
      */
     public function newAction()
     {
+        $querySettings = $this->supportProgrammeRepository->createQuery()->getQuerySettings();
+        $querySettings->setStoragePageIds([$this->settings['programStoragePid']]);
+        $this->supportProgrammeRepository->setDefaultQuerySettings($querySettings);
+
         $this->view->assign('supportProgrammeList', $this->supportProgrammeRepository->findAll());
     }
-
-
 
     /**
      * action requestForm
      *
-     * @param \RKW\RkwManagementConsultancy\Domain\Model\SupportProgramme $supportProgramme
+     * @param \RKW\RkwFeecalculator\Domain\Model\Program $supportProgramme
      * @return void
      */
-    public function requestFormAction(\RKW\RkwManagementConsultancy\Domain\Model\SupportProgramme $supportProgramme = null)
+    public function requestFormAction(\RKW\RkwFeecalculator\Domain\Model\Program $supportProgramme = null)
     {
         if (!$supportProgramme) {
             $this->addFlashMessage(
@@ -128,24 +127,28 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         }
 
         $this->view->assign('supportProgramme', $supportProgramme);
-        $this->view->assign('consultingList', $this->consultingRepository->findBySupportProgramme($supportProgramme));
-        $this->view->assign('legalFormList', $this->legalFormRepository->findAll());
+        $this->view->assign('consultingList', $supportProgramme->getConsulting());
+        $this->view->assign('companyTypeList', $this->companyTypeRepository->findAll());
     }
-
-
 
     /**
      * action create
      *
      * @param \RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest
+     * @param integer $terms
+     * @param integer $privacy
      * @return void
      */
-    public function createAction(\RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest)
+    public function createAction(\RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest, $terms = null, $privacy = null)
     {
         /** @var \RKW\RkwRegistration\Domain\Model\FrontendUser $frontendUser */
         $frontendUser = GeneralUtility::makeInstance('RKW\\RkwRegistration\\Domain\\Model\\FrontendUser');
         $frontendUser->setEmail($newSupportRequest->getContactPersonEmail());
-        $frontendUser->setFirstName($newSupportRequest->getManagerName());
+        $frontendUser->setFirstName($newSupportRequest->getContactPersonFirstName());
+        $frontendUser->setLastName($newSupportRequest->getContactPersonLastName());
+
+        //  transform dates from string to timestamp
+        $newSupportRequest->transformDates();
 
         if ($this->settings['includeRkwRegistrationPrivacy']) {
             // add privacy info
@@ -157,18 +160,42 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
                 'tx_rkwmanagementconsultancy_controller_supportrequest.success.requestCreated', 'rkw_management_consultancy'
             )
         );
+
+        $newSupportRequest->setPid((int)($this->settings['storagePid']));
         $this->supportRequestRepository->add($newSupportRequest);
+
         // persist first before sending mail!
         $this->persistenceManager->persistAll();
 
-        // ----------------------
+        $this->sendConfirmationMail($frontendUser, $newSupportRequest);
 
-        // send final confirmation mail to user
-        $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_USER, array($frontendUser, $newSupportRequest));
+        $this->sendNotificationMail($newSupportRequest);
+
+        $this->redirect('new');
+    }
+
+    /**
+     * Sends confirmation mail to frontenduser.
+     *
+     * @param \RKW\RkwRegistration\Domain\Model\FrontendUser $frontendUser
+     * @param \RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest
+     */
+    protected function sendConfirmationMail(\RKW\RkwRegistration\Domain\Model\FrontendUser $frontendUser, \RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest)
+    {
+        $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_USER, [$frontendUser, $newSupportRequest]);
+    }
+
+    /**
+     * Sends notification mail to admin.
+     *
+     * @param \RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest
+     */
+    protected function sendNotificationMail(\RKW\RkwManagementConsultancy\Domain\Model\SupportRequest $newSupportRequest)
+    {
 
         // send information mail to admins
         $adminUidList = explode(',', $this->settings['mail']['backendUser']);
-        $backendUsers = array();
+        $backendUsers = [];
         foreach ($adminUidList as $adminUid) {
             if ($adminUid) {
                 $admin = $this->backendUserRepository->findByUid($adminUid);
@@ -181,7 +208,7 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         // fallback-handling
         if (
             (count($backendUsers) < 1)
-            && ($backendUserFallback = intval($this->settings['backendUserIdForMails']))
+            && ($backendUserFallback = (int)$this->settings['backendUserIdForMails'])
         ) {
             $admin = $this->backendUserRepository->findByUid($backendUserFallback);
             if (
@@ -193,8 +220,6 @@ class SupportRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
 
         }
 
-        $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_ADMIN, array($backendUsers, $newSupportRequest));
-
-        $this->redirect('new');
+        $this->signalSlotDispatcher->dispatch(__CLASS__, self::SIGNAL_AFTER_REQUEST_CREATED_ADMIN, [$backendUsers, $newSupportRequest]);
     }
 }

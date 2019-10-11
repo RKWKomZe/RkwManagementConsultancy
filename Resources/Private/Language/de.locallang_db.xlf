@@ -11,52 +11,15 @@
 				<source>Provides a form for management consultancy</source>
 			    <target>Diese Extension betreibt ein Antragsformular für Unternehmensberatung</target>
 			</trans-unit>
-
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform">
-				<source>Legal Form</source>
-				<target>Rechtsform</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.title">
-				<source>Title</source>
-				<target>Name</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_legalform.description">
-				<source>Description</source>
-				<target>Beschreibung</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
-				<source>Support Programme</source>
-				<target>Förderprogramm</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.title">
-                <source>Title</source>
-                <target>Name</target>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme">
+                <source>Support program</source>
+                <target>Förderprogramm</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.description">
-                <source>Description</source>
-                <target>Beschreibung</target>
-            </trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportprogramme.consulting">
-				<source>Consulting</source>
-				<target>Art der Beratung</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting">
-				<source>Consulting</source>
-				<target>Art der Beratung</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.title">
-				<source>Title</source>
-				<target>Name</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_consulting.duration">
-				<source>Duration</source>
-				<target>Dauer</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest">
 				<source>Support Request</source>
-				<target>Unterstützungsanfrage</target>
+				<target>Beratungsanfrage</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
                 <source>Type of consultation</source>
                 <target>Art der Beratung</target>
             </trans-unit>
@@ -66,23 +29,23 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.misc">
                 <source>Misc</source>
-                <target>Weiteres</target>
+                <target>Sonstiges</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
-                <source>--- please choose ---</source>
-                <target>--- Bitte wählen ---</target>
+                <source>-- Please choose --</source>
+                <target>-- Bitte wählen --</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up">
 				<source>Is Start Up</source>
-				<target>Ist ein Startup</target>
+				<target>Ist ein Unternehmen in Gründung</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.no">
                 <source>Not a startup</source>
-                <target>Ist kein startup</target>
+                <target>Ist kein Unternehmen in Gründung</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.yes">
                 <source>Is Start Up</source>
-                <target>Ist ein Startup</target>
+				<target>Ist ein Unternehmen in Gründung</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.name">
 				<source>Name</source>
@@ -122,7 +85,7 @@
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation">
 				<source>Sole Representation</source>
-				<target>Einzelvertretung</target>
+				<target>Einzelvertretungsberechtigung</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1">
                 <source>Yes</source>
@@ -164,9 +127,13 @@
 				<source>IBAN</source>
 				<target>IBAN</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_name">
-				<source>Contact Person Name</source>
-				<target>Ansprechpartner für RKW</target>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_last_name">
+				<source>Contact Person Last Name</source>
+				<target>Ansprechpartner für RKW (Nachname)</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_first_name">
+				<source>Contact Person First Name</source>
+				<target>Ansprechpartner für RKW (Vorname)</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_phone">
 				<source>Contact Person Phone</source>
@@ -214,7 +181,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.sideline">
                 <source>Sideline</source>
-                <target>Ja - nebenerwerb</target>
+                <target>Ja - im Nebenerwerb</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.mainOccupation">
                 <source>Main Occupation</source>
@@ -222,7 +189,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase">
                 <source>Entire Consultation Phase</source>
-                <target>Beratungsdauer (Tagwerke a' 8h)</target>
+                <target>Beratungsdauer (Tagwerke á 8h)</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from">
 				<source>Consulting Date From</source>
@@ -266,11 +233,11 @@
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant1_accreditation_number">
 				<source>Consultant1 Accreditation Number</source>
-				<target>Akkr-Nr.</target>
+				<target>Akkr-Nr. (Berater)</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant2_accreditation_number">
 				<source>Consultant2 Accreditation Number</source>
-				<target>Akkr-Nr.</target>
+				<target>Akkr-Nr. (2. Berater)</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_fee">
 				<source>Consultant Fee</source>
@@ -316,8 +283,8 @@
 				<source>Consulting</source>
 				<target>Beratung</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.legal_form">
-				<source>Legal Form</source>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_type">
+				<source>Company type</source>
 				<target>Rechtsform</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.privacy">

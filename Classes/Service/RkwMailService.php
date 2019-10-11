@@ -4,7 +4,6 @@ namespace RKW\RkwManagementConsultancy\Service;
 
 use \RKW\RkwBasics\Helper\Common;
 use \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -56,21 +55,21 @@ class RkwMailService implements \TYPO3\CMS\Core\SingletonInterface
                 $mailService = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('RKW\\RkwMailer\\Service\\MailService');
 
                 // send new user an email with token
-                $mailService->setTo($frontendUser, array(
-                    'marker' => array(
+                $mailService->setTo($frontendUser, [
+                    'marker' => [
                         'supportRequest' => $supportRequest,
                         'frontendUser' => $frontendUser,
                         'pageUid'      => intval($GLOBALS['TSFE']->id),
                         'loginPid'     => intval($settingsDefault['loginPid']),
-                    ),
-                ));
+                    ],
+                ]);
 
                 $mailService->getQueueMail()->setSubject(
                     \RKW\RkwMailer\Helper\FrontendLocalization::translate(
                         'rkwMailService.confirmationUser.subject',
                         'rkw_management_consultancy',
                         null,
-                        $frontendUser->getTxRkwregistrationLanguageKey()
+                        ($frontendUser->getTxRkwregistrationLanguageKey()) ? $frontendUser->getTxRkwregistrationLanguageKey() : 'de'
                     )
                 );
 
@@ -107,7 +106,7 @@ class RkwMailService implements \TYPO3\CMS\Core\SingletonInterface
         $settings = $this->getSettings(ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK);
         $settingsDefault = $this->getSettings();
 
-        $recipients = array();
+        $recipients = [];
         if (is_array($backendUser)) {
             $recipients = $backendUser;
         } else {
@@ -125,20 +124,20 @@ class RkwMailService implements \TYPO3\CMS\Core\SingletonInterface
                     && ($recipient->getEmail())
                 ) {
                     // send new user an email with token
-                    $mailService->setTo($recipient, array(
-                        'marker'  => array(
+                    $mailService->setTo($recipient, [
+                        'marker'  => [
                             'supportRequest' => $supportRequest,
                             'backendUser'  => $recipient,
                             'pageUid'      => intval($GLOBALS['TSFE']->id),
                             'loginPid'     => intval($settingsDefault['loginPid']),
-                        ),
+                        ],
                         'subject' => \RKW\RkwMailer\Helper\FrontendLocalization::translate(
                             'rkwMailService.notifyAdmin.subject',
                             'rkw_management_consultancy',
                             null,
                             $recipient->getLang()
                         ),
-                    ));
+                    ]);
                 }
             }
 
