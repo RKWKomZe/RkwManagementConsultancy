@@ -65,7 +65,7 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_location">
                 <source>Intended location of foundation</source>
-                <target>Geplanter Ort der Gründung</target>
+                <target>Geplanter Ort der Gründung (PLZ, Ort)</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sales">
 				<source>Sales</source>
