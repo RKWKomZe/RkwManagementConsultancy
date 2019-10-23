@@ -19,9 +19,9 @@
 				<source>Support Request</source>
 				<target>Beratungsanfrage</target>
 			</trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.typeOfConsultation">
-                <source>Type of consultation</source>
-                <target>Art der Beratung</target>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.consultation">
+                <source>Consultation</source>
+                <target>Beratung</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.consultant">
                 <source>Consultant</source>
@@ -34,18 +34,6 @@
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose">
                 <source>-- Please choose --</source>
                 <target>-- Bitte wählen --</target>
-            </trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up">
-				<source>Is Start Up</source>
-				<target>Ist ein Unternehmen in Gründung</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.no">
-                <source>Not a startup</source>
-                <target>Ist kein Unternehmen in Gründung</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.is_start_up.yes">
-                <source>Is Start Up</source>
-				<target>Ist ein Unternehmen in Gründung</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.name">
 				<source>Name</source>
@@ -63,47 +51,59 @@
 				<source>City</source>
 				<target>Ort</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_date">
-				<source>Foundation Date</source>
-				<target>Gründungsdatum</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.revenue">
-				<source>Revenue</source>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_date">
+                <source>(Intended) Foundation Date</source>
+                <target>(Geplantes) Gründungsdatum</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.citizenship">
+                <source>Citizenship</source>
+                <target>Staatsangehörigkeit</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.birthdate">
+                <source>Birthdate</source>
+                <target>Geburtsdatum</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_location">
+                <source>Intended location of foundation</source>
+                <target>Geplanter Ort der Gründung</target>
+            </trans-unit>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sales">
+				<source>Sales</source>
 				<target>Umsatz in T€</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.balance_sum">
-				<source>Balance Sum</source>
-				<target>Bilanzsumme T€</target>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.balance">
+				<source>Balance</source>
+				<target>Bilanzsumme in T€</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.number_of_employees">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.employees_count">
 				<source>Number Of Employees</source>
 				<target>Mitarbeiterzahl</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.manager_name">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.manager">
 				<source>Manager Name</source>
 				<target>Geschäftsführer / Inhaber</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation">
-				<source>Sole Representation</source>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.single_representative">
+				<source>Single Representative</source>
 				<target>Einzelvertretungsberechtigung</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.1">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.single_representative.1">
                 <source>Yes</source>
                 <target>Ja</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation.99">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.single_representative.99">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_tax_deduction">
 				<source>Deduction Right</source>
 				<target>Vorsteuerabzugsberechtigung</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.1">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_tax_deduction.1">
                 <source>Yes</source>
                 <target>Ja</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.deduction_right.99">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_tax_deduction.99">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
@@ -111,11 +111,31 @@
 				<source>Business Purpose</source>
 				<target>Unternehmensgegenstand</target>
 			</trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.insolvency_proceedings">
+                <source>Insolvency Proceedings</source>
+                <target>Insolvenzverfahren</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.chamber">
+                <source>Chamber</source>
+                <target>Kammerzugehörigkeit</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.chamber.1">
+                <source>none</source>
+                <target>keine</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.chamber.2">
+                <source>IHK</source>
+                <target>IHK</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.chamber.3">
+                <source>HWK</source>
+                <target>HWK</target>
+            </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_shares">
 				<source>Company Shares</source>
 				<target>Gesellschaftsanteile (namentliche Verteilung der Anteile in %)</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.principle_bank">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.principal_bank">
 				<source>Principle Bank</source>
 				<target>Hausbank</target>
 			</trans-unit>
@@ -151,43 +171,39 @@
 				<source>Contact Person Email</source>
 				<target>E-Mail (personenbezogen)</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_foundation_date">
-				<source>Start Up Foundation Date</source>
-				<target>Geplantes Gründungsdatum</target>
-			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment">
 				<source>Start Up Employment Status Before</source>
 				<target>Erwerbsstatus vor Gründung</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.employed">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.employed">
                 <source>Employed</source>
                 <target>angestellt</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.unemployed">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.unemployed">
                 <source>Unemployed</source>
                 <target>arbeitslos</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_employment_status_before.freelancer">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.freelancer">
                 <source>Freelancer</source>
                 <target>Selbstständig</target>
             </trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment">
 				<source>Start Up Independent Work</source>
 				<target>Liegt bereits eine selbstständige Tätigkeit vor?</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.no">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.no">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.sideline">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.sideline">
                 <source>Sideline</source>
                 <target>Ja - im Nebenerwerb</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.start_up_independent_work.mainOccupation">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.mainOccupation">
                 <source>Main Occupation</source>
                 <target>Ja - im Haupterwerb</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_days">
                 <source>Entire Consultation Phase</source>
                 <target>Beratungsdauer (Tagwerke á 8h)</target>
             </trans-unit>
@@ -195,11 +211,11 @@
 				<source>Consulting Date From</source>
 				<target>Zeitraum von</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_up_to">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_to">
 				<source>Consulting Date Up To</source>
 				<target>Zeitraum bis</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_description">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_content">
 				<source>Consulting Description</source>
 				<target>Beratungsinhalte</target>
 			</trans-unit>
@@ -251,27 +267,31 @@
 				<source>Consultant Email</source>
 				<target>E-Mail</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.premature_start">
 				<source>Early Start Desired</source>
 				<target>Vorzeitiger Maßnahmebeginn erwünscht</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.1">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.premature_start.1">
                 <source>Yes</source>
                 <target>Ja</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.early_start_desired.99">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.premature_start.99">
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents">
 				<source>Send Documents Allowed</source>
 				<target>Wie dürfen wir Ihnen Ihre Antragsunterlagen zusenden?</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.1">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.bafa_support">
+                <source>Already received BAFA support?</source>
+                <target>Haben Sie bereits BAFA-Förderung erhalten?</target>
+            </trans-unit>
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents.1">
                 <source>via E-Mail</source>
                 <target>Per E-Mail</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents_allowed.2">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.send_documents.2">
                 <source>via post</source>
                 <target>Per Post</target>
             </trans-unit>

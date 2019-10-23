@@ -23,13 +23,6 @@ namespace RKW\RkwManagementConsultancy\Domain\Model;
  */
 class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
-    /**
-     * isStartUp
-     *
-     * @var int
-//     * @validate NotEmpty
-     */
-    protected $isStartUp = 0;
 
     /**
      * name
@@ -72,49 +65,49 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $foundationDate = 0;
 
     /**
-     * revenue
+     * sales
      *
      * @var string
      */
-    protected $revenue = '';
+    protected $sales = '';
 
     /**
-     * balanceSum
+     * balance
      *
      * @var string
      */
-    protected $balanceSum = '';
+    protected $balance = '';
 
     /**
-     * numberOfEmployees
+     * employeesCount
      *
      * @var int
      */
-    protected $numberOfEmployees = 0;
+    protected $employeesCount = 0;
 
     /**
-     * managerName
+     * manager
      *
      * @var string
 //     * @validate NotEmpty
      */
-    protected $managerName = '';
+    protected $manager = '';
 
     /**
-     * soleRepresentation
+     * singleRepresentative
      *
      * @var int
 //     * @validate NotEmpty
      */
-    protected $soleRepresentation = 0;
+    protected $singleRepresentative = 0;
 
     /**
-     * deductionRight
+     * preTaxDeduction
      *
      * @var int
 //     * @validate NotEmpty
      */
-    protected $deductionRight = 0;
+    protected $preTaxDeduction = 0;
 
     /**
      * businessPurpose
@@ -133,11 +126,11 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $companyShares = '';
 
     /**
-     * principleBank
+     * principalBank
      *
      * @var string
      */
-    protected $principleBank = '';
+    protected $principalBank = '';
 
     /**
      * bic
@@ -208,25 +201,25 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $startUpFoundationDate = 0;
 
     /**
-     * startUpEmploymentStatusBefore
+     * preFoundationEmployment
      *
      * @var int
      */
-    protected $startUpEmploymentStatusBefore = 0;
+    protected $preFoundationEmployment = 0;
 
     /**
-     * startUpIndependentWork
+     * preFoundationSelfEmployment
      *
      * @var int
      */
-    protected $startUpIndependentWork = 0;
+    protected $preFoundationSelfEmployment = 0;
 
     /**
-     * entireConsultationPhase
+     * consultingDays
      *
      * @var int
      */
-    protected $entireConsultationPhase = 0;
+    protected $consultingDays = 0;
 
     /**
      * consultingDateFrom
@@ -237,20 +230,20 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $consultingDateFrom = 0;
 
     /**
-     * consultingDateUpTo
+     * consultingDateTo
      *
      * @var string
      * @validate NotEmpty, \RKW\RkwManagementConsultancy\Validation\Validator\CustomDateValidator
      */
-    protected $consultingDateUpTo = 0;
+    protected $consultingDateTo = 0;
 
     /**
-     * consultingDescription
+     * consultingContent
      *
      * @var string
 //     * @validate NotEmpty
      */
-    protected $consultingDescription = '';
+    protected $consultingContent = '';
 
     /**
      * consultantType
@@ -317,20 +310,20 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $consultantEmail = '';
 
     /**
-     * earlyStartDesired
+     * prematureStart
      *
      * @var int
 //     * @validate NotEmpty
      */
-    protected $earlyStartDesired = 0;
+    protected $prematureStart = 0;
 
     /**
-     * sendDocumentsAllowed
+     * sendDocuments
      *
      * @var int
 //     * @validate NotEmpty
      */
-    protected $sendDocumentsAllowed = 0;
+    protected $sendDocuments = 0;
 
     /**
      * privacy
@@ -371,27 +364,6 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 //     * @validate NotEmpty
      */
     protected $companyType = 0;
-
-    /**
-     * Returns the isStartUp
-     *
-     * @return int $isStartUp
-     */
-    public function getIsStartUp()
-    {
-        return $this->isStartUp;
-    }
-
-    /**
-     * Sets the isStartUp
-     *
-     * @param int $isStartUp
-     * @return void
-     */
-    public function setIsStartUp($isStartUp)
-    {
-        $this->isStartUp = $isStartUp;
-    }
 
     /**
      * Returns the name
@@ -499,129 +471,129 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the revenue
+     * Returns the sales
      *
-     * @return string $revenue
+     * @return string $sales
      */
-    public function getRevenue()
+    public function getSales()
     {
-        return $this->revenue;
+        return $this->sales;
     }
 
     /**
-     * Sets the revenue
+     * Sets the sales
      *
-     * @param string $revenue
+     * @param string $sales
      * @return void
      */
-    public function setRevenue($revenue)
+    public function setSales($sales)
     {
-        $this->revenue = $revenue;
+        $this->sales = $sales;
     }
 
     /**
-     * Returns the balanceSum
+     * Returns the balance
      *
-     * @return string $balanceSum
+     * @return string $balance
      */
-    public function getBalanceSum()
+    public function getBalance()
     {
-        return $this->balanceSum;
+        return $this->balance;
     }
 
     /**
-     * Sets the balanceSum
+     * Sets the balance
      *
-     * @param string $balanceSum
+     * @param string $balance
      * @return void
      */
-    public function setBalanceSum($balanceSum)
+    public function setBalance($balance)
     {
-        $this->balanceSum = $balanceSum;
+        $this->balance = $balance;
     }
 
     /**
-     * Returns the numberOfEmployees
+     * Returns the employeesCount
      *
-     * @return int $numberOfEmployees
+     * @return int $employeesCount
      */
-    public function getNumberOfEmployees()
+    public function getEmployeesCount()
     {
-        return $this->numberOfEmployees;
+        return $this->employeesCount;
     }
 
     /**
-     * Sets the numberOfEmployees
+     * Sets the employeesCount
      *
-     * @param int $numberOfEmployees
+     * @param int $employeesCount
      * @return void
      */
-    public function setNumberOfEmployees($numberOfEmployees)
+    public function setEmployeesCount($employeesCount)
     {
-        $this->numberOfEmployees = $numberOfEmployees;
+        $this->employeesCount = $employeesCount;
     }
 
     /**
-     * Returns the managerName
+     * Returns the manager
      *
-     * @return string $managerName
+     * @return string $manager
      */
-    public function getManagerName()
+    public function getManager()
     {
-        return $this->managerName;
+        return $this->manager;
     }
 
     /**
-     * Sets the managerName
+     * Sets the manager
      *
-     * @param string $managerName
+     * @param string $manager
      * @return void
      */
-    public function setManagerName($managerName)
+    public function setManager($manager)
     {
-        $this->managerName = $managerName;
+        $this->manager = $manager;
     }
 
     /**
-     * Returns the soleRepresentation
+     * Returns the singleRepresentative
      *
-     * @return int $soleRepresentation
+     * @return int $singleRepresentative
      */
-    public function getSoleRepresentation()
+    public function getSingleRepresentative()
     {
-        return $this->soleRepresentation;
+        return $this->singleRepresentative;
     }
 
     /**
-     * Sets the soleRepresentation
+     * Sets the singleRepresentative
      *
-     * @param int $soleRepresentation
+     * @param int $singleRepresentative
      * @return void
      */
-    public function setSoleRepresentation($soleRepresentation)
+    public function setSingleRepresentative($singleRepresentative)
     {
-        $this->soleRepresentation = $soleRepresentation;
+        $this->singleRepresentative = $singleRepresentative;
     }
 
     /**
-     * Returns the deductionRight
+     * Returns the preTaxDeduction
      *
-     * @return int $deductionRight
+     * @return int $preTaxDeduction
      */
-    public function getDeductionRight()
+    public function getPreTaxDeduction()
     {
-        return $this->deductionRight;
+        return $this->preTaxDeduction;
     }
 
     /**
-     * Sets the deductionRight
+     * Sets the preTaxDeduction
      *
-     * @param int $deductionRight
+     * @param int $preTaxDeduction
      * @return void
      */
-    public function setDeductionRight($deductionRight)
+    public function setPreTaxDeduction($preTaxDeduction)
     {
-        $this->deductionRight = $deductionRight;
+        $this->preTaxDeduction = $preTaxDeduction;
     }
 
     /**
@@ -667,24 +639,24 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the principleBank
+     * Returns the principalBank
      *
-     * @return string $principleBank
+     * @return string $principalBank
      */
-    public function getPrincipleBank()
+    public function getPrincipalBank()
     {
-        return $this->principleBank;
+        return $this->principalBank;
     }
 
     /**
-     * Sets the principleBank
+     * Sets the principalBank
      *
-     * @param string $principleBank
+     * @param string $principalBank
      * @return void
      */
-    public function setPrincipleBank($principleBank)
+    public function setPrincipalBank($principalBank)
     {
-        $this->principleBank = $principleBank;
+        $this->principalBank = $principalBank;
     }
 
     /**
@@ -877,66 +849,66 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the startUpEmploymentStatusBefore
+     * Returns the preFoundationEmployment
      *
-     * @return int $startUpEmploymentStatusBefore
+     * @return int $preFoundationEmployment
      */
-    public function getStartUpEmploymentStatusBefore()
+    public function getPreFoundationEmployment()
     {
-        return $this->startUpEmploymentStatusBefore;
+        return $this->preFoundationEmployment;
     }
 
     /**
-     * Sets the startUpEmploymentStatusBefore
+     * Sets the preFoundationEmployment
      *
-     * @param int $startUpEmploymentStatusBefore
+     * @param int $preFoundationEmployment
      * @return void
      */
-    public function setStartUpEmploymentStatusBefore($startUpEmploymentStatusBefore)
+    public function setPreFoundationEmployment($preFoundationEmployment)
     {
-        $this->startUpEmploymentStatusBefore = $startUpEmploymentStatusBefore;
+        $this->preFoundationEmployment = $preFoundationEmployment;
     }
 
     /**
-     * Returns the startUpIndependentWork
+     * Returns the preFoundationSelfEmployment
      *
-     * @return int $startUpIndependentWork
+     * @return int $preFoundationSelfEmployment
      */
-    public function getStartUpIndependentWork()
+    public function getPreFoundationSelfEmployment()
     {
-        return $this->startUpIndependentWork;
+        return $this->preFoundationSelfEmployment;
     }
 
     /**
-     * Sets the startUpIndependentWork
+     * Sets the preFoundationSelfEmployment
      *
-     * @param int $startUpIndependentWork
+     * @param int $preFoundationSelfEmployment
      * @return void
      */
-    public function setStartUpIndependentWork($startUpIndependentWork)
+    public function setPreFoundationSelfEmployment($preFoundationSelfEmployment)
     {
-        $this->startUpIndependentWork = $startUpIndependentWork;
+        $this->preFoundationSelfEmployment = $preFoundationSelfEmployment;
     }
 
     /**
-     * Returns the entireConsultationPhase
+     * Returns the consultingDays
      *
-     * @return int $entireConsultationPhase
+     * @return int $consultingDays
      */
-    public function getEntireConsultationPhase()
+    public function getConsultingDays()
     {
-        return $this->entireConsultationPhase;
+        return $this->consultingDays;
     }
 
     /**
-     * Sets the entireConsultationPhase
+     * Sets the consultingDays
      *
-     * @param int $entireConsultationPhase
+     * @param int $consultingDays
      * @return void
      */
-    public function setentireConsultationPhase($startUpIndependentWork)
+    public function setconsultingDays($preFoundationSelfEmployment)
     {
-        $this->startUpIndependentWork = $startUpIndependentWork;
+        $this->preFoundationSelfEmployment = $preFoundationSelfEmployment;
     }
 
     /**
@@ -961,45 +933,45 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the consultingDateUpTo
+     * Returns the consultingDateTo
      *
-     * @return int $consultingDateUpTo
+     * @return int $consultingDateTo
      */
-    public function getConsultingDateUpTo()
+    public function getConsultingDateTo()
     {
-        return $this->consultingDateUpTo;
+        return $this->consultingDateTo;
     }
 
     /**
-     * Sets the consultingDateUpTo
+     * Sets the consultingDateTo
      *
-     * @param int $consultingDateUpTo
+     * @param int $consultingDateTo
      * @return void
      */
-    public function setConsultingDateUpTo($consultingDateUpTo)
+    public function setConsultingDateTo($consultingDateTo)
     {
-        $this->consultingDateUpTo = $consultingDateUpTo;
+        $this->consultingDateTo = $consultingDateTo;
     }
 
     /**
-     * Returns the consultingDescription
+     * Returns the consultingContent
      *
-     * @return string $consultingDescription
+     * @return string $consultingContent
      */
-    public function getConsultingDescription()
+    public function getConsultingContent()
     {
-        return $this->consultingDescription;
+        return $this->consultingContent;
     }
 
     /**
-     * Sets the consultingDescription
+     * Sets the consultingContent
      *
-     * @param string $consultingDescription
+     * @param string $consultingContent
      * @return void
      */
-    public function setConsultingDescription($consultingDescription)
+    public function setConsultingContent($consultingContent)
     {
-        $this->consultingDescription = $consultingDescription;
+        $this->consultingContent = $consultingContent;
     }
 
     /**
@@ -1192,45 +1164,45 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the earlyStartDesired
+     * Returns the prematureStart
      *
-     * @return int $earlyStartDesired
+     * @return int $prematureStart
      */
-    public function getEarlyStartDesired()
+    public function getPrematureStart()
     {
-        return $this->earlyStartDesired;
+        return $this->prematureStart;
     }
 
     /**
-     * Sets the earlyStartDesired
+     * Sets the prematureStart
      *
-     * @param int $earlyStartDesired
+     * @param int $prematureStart
      * @return void
      */
-    public function setEarlyStartDesired($earlyStartDesired)
+    public function setPrematureStart($prematureStart)
     {
-        $this->earlyStartDesired = $earlyStartDesired;
+        $this->prematureStart = $prematureStart;
     }
 
     /**
-     * Returns the sendDocumentsAllowed
+     * Returns the sendDocuments
      *
-     * @return int $sendDocumentsAllowed
+     * @return int $sendDocuments
      */
-    public function getSendDocumentsAllowed()
+    public function getSendDocuments()
     {
-        return $this->sendDocumentsAllowed;
+        return $this->sendDocuments;
     }
 
     /**
-     * Sets the sendDocumentsAllowed
+     * Sets the sendDocuments
      *
-     * @param int $sendDocumentsAllowed
+     * @param int $sendDocuments
      * @return void
      */
-    public function setSendDocumentsAllowed($sendDocumentsAllowed)
+    public function setSendDocuments($sendDocuments)
     {
-        $this->sendDocumentsAllowed = $sendDocumentsAllowed;
+        $this->sendDocuments = $sendDocuments;
     }
 
     /**
@@ -1348,7 +1320,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         $this->foundationDate = $this->transformDate($this->foundationDate);
         $this->startUpFoundationDate = $this->transformDate($this->startUpFoundationDate);
         $this->consultingDateFrom = $this->transformDate($this->consultingDateFrom);
-        $this->consultingDateUpTo = $this->transformDate($this->consultingDateUpTo);
+        $this->consultingDateTo = $this->transformDate($this->consultingDateTo);
     }
 
     /**

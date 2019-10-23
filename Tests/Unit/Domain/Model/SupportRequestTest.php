@@ -27,20 +27,6 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getIsStartUpReturnsInitialValueForInt()
-    {
-    }
-
-    /**
-     * @test
-     */
-    public function setIsStartUpForIntSetsIsStartUp()
-    {
-    }
-
-    /**
-     * @test
-     */
     public function getNameReturnsInitialValueForString()
     {
         self::assertSame(
@@ -164,11 +150,11 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getRevenueReturnsInitialValueForString()
+    public function getSalesReturnsInitialValueForString()
     {
         self::assertSame(
             '',
-            $this->subject->getRevenue()
+            $this->subject->getSales()
         );
 
     }
@@ -176,13 +162,13 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function setRevenueForStringSetsRevenue()
+    public function setSalesForStringSetsSales()
     {
-        $this->subject->setRevenue('Conceived at T3CON10');
+        $this->subject->setSales('Conceived at T3CON10');
 
         self::assertAttributeEquals(
             'Conceived at T3CON10',
-            'revenue',
+            'sales',
             $this->subject
         );
 
@@ -191,11 +177,11 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getBalanceSumReturnsInitialValueForString()
+    public function getBalanceReturnsInitialValueForString()
     {
         self::assertSame(
             '',
-            $this->subject->getBalanceSum()
+            $this->subject->getBalance()
         );
 
     }
@@ -203,13 +189,13 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function setBalanceSumForStringSetsBalanceSum()
+    public function setBalanceForStringSetsBalance()
     {
-        $this->subject->setBalanceSum('Conceived at T3CON10');
+        $this->subject->setBalance('Conceived at T3CON10');
 
         self::assertAttributeEquals(
             'Conceived at T3CON10',
-            'balanceSum',
+            'balance',
             $this->subject
         );
 
@@ -218,25 +204,25 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getNumberOfEmployeesReturnsInitialValueForInt()
+    public function getEmployeesCountReturnsInitialValueForInt()
     {
     }
 
     /**
      * @test
      */
-    public function setNumberOfEmployeesForIntSetsNumberOfEmployees()
+    public function setEmployeesCountForIntSetsEmployeesCount()
     {
     }
 
     /**
      * @test
      */
-    public function getManagerNameReturnsInitialValueForString()
+    public function getManagerReturnsInitialValueForString()
     {
         self::assertSame(
             '',
-            $this->subject->getManagerName()
+            $this->subject->getManager()
         );
 
     }
@@ -244,13 +230,13 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function setManagerNameForStringSetsManagerName()
+    public function setManagerForStringSetsManager()
     {
-        $this->subject->setManagerName('Conceived at T3CON10');
+        $this->subject->setManager('Conceived at T3CON10');
 
         self::assertAttributeEquals(
             'Conceived at T3CON10',
-            'managerName',
+            'manager',
             $this->subject
         );
 
@@ -259,28 +245,28 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getSoleRepresentationReturnsInitialValueForInt()
+    public function getSingleRepresentativeReturnsInitialValueForInt()
     {
     }
 
     /**
      * @test
      */
-    public function setSoleRepresentationForIntSetsSoleRepresentation()
+    public function setSingleRepresentativeForIntSetsSingleRepresentative()
     {
     }
 
     /**
      * @test
      */
-    public function getDeductionRightReturnsInitialValueForInt()
+    public function getPreTaxDeductionReturnsInitialValueForInt()
     {
     }
 
     /**
      * @test
      */
-    public function setDeductionRightForIntSetsDeductionRight()
+    public function setPreTaxDeductionForIntSetsPreTaxDeduction()
     {
     }
 
@@ -341,11 +327,11 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getPrincipleBankReturnsInitialValueForString()
+    public function getPrincipalBankReturnsInitialValueForString()
     {
         self::assertSame(
             '',
-            $this->subject->getPrincipleBank()
+            $this->subject->getPrincipalBank()
         );
 
     }
@@ -353,13 +339,13 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function setPrincipleBankForStringSetsPrincipleBank()
+    public function setPrincipalBankForStringSetsPrincipalBank()
     {
-        $this->subject->setPrincipleBank('Conceived at T3CON10');
+        $this->subject->setPrincipalBank('Conceived at T3CON10');
 
         self::assertAttributeEquals(
             'Conceived at T3CON10',
-            'principleBank',
+            'principalBank',
             $this->subject
         );
 
@@ -558,28 +544,28 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getStartUpEmploymentStatusBeforeReturnsInitialValueForInt()
+    public function getPreFoundationEmploymentReturnsInitialValueForInt()
     {
     }
 
     /**
      * @test
      */
-    public function setStartUpEmploymentStatusBeforeForIntSetsStartUpEmploymentStatusBefore()
+    public function setPreFoundationEmploymentForIntSetsPreFoundationEmployment()
     {
     }
 
     /**
      * @test
      */
-    public function getStartUpIndependentWorkReturnsInitialValueForInt()
+    public function getPreFoundationSelfEmploymentReturnsInitialValueForInt()
     {
     }
 
     /**
      * @test
      */
-    public function setStartUpIndependentWorkForIntSetsStartUpIndependentWork()
+    public function setPreFoundationSelfEmploymentForIntSetsPreFoundationSelfEmployment()
     {
     }
 
@@ -614,11 +600,11 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getConsultingDateUpToReturnsInitialValueForDateTime()
+    public function getConsultingDateToReturnsInitialValueForDateTime()
     {
         self::assertEquals(
             null,
-            $this->subject->getConsultingDateUpTo()
+            $this->subject->getConsultingDateTo()
         );
 
     }
@@ -626,14 +612,14 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function setConsultingDateUpToForDateTimeSetsConsultingDateUpTo()
+    public function setConsultingDateToForDateTimeSetsConsultingDateTo()
     {
         $dateTimeFixture = new \DateTime();
-        $this->subject->setConsultingDateUpTo($dateTimeFixture);
+        $this->subject->setConsultingDateTo($dateTimeFixture);
 
         self::assertAttributeEquals(
             $dateTimeFixture,
-            'consultingDateUpTo',
+            'consultingDateTo',
             $this->subject
         );
 
@@ -642,11 +628,11 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getConsultingDescriptionReturnsInitialValueForString()
+    public function getConsultingContentReturnsInitialValueForString()
     {
         self::assertSame(
             '',
-            $this->subject->getConsultingDescription()
+            $this->subject->getConsultingContent()
         );
 
     }
@@ -654,13 +640,13 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function setConsultingDescriptionForStringSetsConsultingDescription()
+    public function setConsultingContentForStringSetsConsultingContent()
     {
-        $this->subject->setConsultingDescription('Conceived at T3CON10');
+        $this->subject->setConsultingContent('Conceived at T3CON10');
 
         self::assertAttributeEquals(
             'Conceived at T3CON10',
-            'consultingDescription',
+            'consultingContent',
             $this->subject
         );
 
@@ -899,28 +885,28 @@ class SupportRequestTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getEarlyStartDesiredReturnsInitialValueForInt()
+    public function getPrematureStartReturnsInitialValueForInt()
     {
     }
 
     /**
      * @test
      */
-    public function setEarlyStartDesiredForIntSetsEarlyStartDesired()
+    public function setPrematureStartForIntSetsPrematureStart()
     {
     }
 
     /**
      * @test
      */
-    public function getSendDocumentsAllowedReturnsInitialValueForInt()
+    public function getSendDocumentsReturnsInitialValueForInt()
     {
     }
 
     /**
      * @test
      */
-    public function setSendDocumentsAllowedForIntSetsSendDocumentsAllowed()
+    public function setSendDocumentsForIntSetsSendDocuments()
     {
     }
 

@@ -9,9 +9,6 @@
 			<trans-unit id="tx_rkw_management_consultancy_domain_model_request.description">
 				<source>Provides a form for mangement consultancy with a Backend Module for evaluation and csv export</source>
 			</trans-unit>
-			<trans-unit id="is_start_up.description">
-				<source>isStartUp</source>
-			</trans-unit>
 			<trans-unit id="name.description">
 				<source>name</source>
 			</trans-unit>
@@ -27,32 +24,47 @@
 			<trans-unit id="foundation_date.description">
 				<source>foundationDate</source>
 			</trans-unit>
-			<trans-unit id="revenue.description">
-				<source>revenue</source>
+			<trans-unit id="citizenship.description">
+				<source>citizenship</source>
 			</trans-unit>
-			<trans-unit id="balance_sum.description">
-				<source>balanceSum</source>
+			<trans-unit id="birthdate.description">
+				<source>birthdate</source>
 			</trans-unit>
-			<trans-unit id="number_of_employees.description">
-				<source>numberOfEmployees</source>
+			<trans-unit id="foundation_location.description">
+				<source>foundationLocation</source>
 			</trans-unit>
-			<trans-unit id="manager_name.description">
-				<source>managerName</source>
+			<trans-unit id="sales.description">
+				<source>sales</source>
 			</trans-unit>
-			<trans-unit id="sole_representation.description">
-				<source>soleRepresentation</source>
+			<trans-unit id="balance.description">
+				<source>balance</source>
 			</trans-unit>
-			<trans-unit id="deduction_right.description">
-				<source>deductionRight</source>
+			<trans-unit id="employees_count.description">
+				<source>employeesCount</source>
+			</trans-unit>
+			<trans-unit id="manager.description">
+				<source>manager</source>
+			</trans-unit>
+			<trans-unit id="single_representative.description">
+				<source>singleRepresentative</source>
+			</trans-unit>
+			<trans-unit id="pre_tax_deduction.description">
+				<source>preTaxDeduction</source>
 			</trans-unit>
 			<trans-unit id="business_purpose.description">
 				<source>businessPurpose</source>
 			</trans-unit>
+			<trans-unit id="insolvency_proceedings.description">
+				<source>insolvencyProceedings</source>
+			</trans-unit>
+			<trans-unit id="chamber.description">
+				<source>chamber</source>
+			</trans-unit>
 			<trans-unit id="company_shares.description">
 				<source>companyShares</source>
 			</trans-unit>
-			<trans-unit id="principle_bank.description">
-				<source>principleBank</source>
+			<trans-unit id="principal_bank.description">
+				<source>principalBank</source>
 			</trans-unit>
 			<trans-unit id="bic.description">
 				<source>bic</source>
@@ -78,26 +90,23 @@
 			<trans-unit id="contact_person_email.description">
 				<source>contactPersonEmail</source>
 			</trans-unit>
-			<trans-unit id="start_up_foundation_date.description">
-				<source>startUpFoundationDate</source>
+			<trans-unit id="pre_foundation_employment.description">
+				<source>preFoundationEmployment</source>
 			</trans-unit>
-			<trans-unit id="start_up_employment_status_before.description">
-				<source>startUpEmploymentStatusBefore</source>
+			<trans-unit id="pre_foundation_self_employment.description">
+				<source>preFoundationSelfEmployment</source>
 			</trans-unit>
-			<trans-unit id="start_up_independent_work.description">
-				<source>startUpIndependentWork</source>
-			</trans-unit>
-			<trans-unit id="entire_consultation_phase.description">
-                <source>entireConsultationPhase</source>
+			<trans-unit id="consulting_days.description">
+                <source>consultingDays</source>
             </trans-unit>
 			<trans-unit id="consulting_date_from.description">
 				<source>consultingDateFrom</source>
 			</trans-unit>
-			<trans-unit id="consulting_date_up_to.description">
-				<source>consultingDateUpTo</source>
+			<trans-unit id="consulting_date_to.description">
+				<source>consultingDateTo</source>
 			</trans-unit>
-			<trans-unit id="consulting_description.description">
-				<source>consultingDescription</source>
+			<trans-unit id="consulting_content.description">
+				<source>consultingContent</source>
 			</trans-unit>
 			<trans-unit id="consultant_type.description">
 				<source>consultantType</source>
@@ -126,11 +135,14 @@
 			<trans-unit id="consultant_email.description">
 				<source>consultantEmail</source>
 			</trans-unit>
-			<trans-unit id="early_start_desired.description">
-				<source>earlyStartDesired</source>
+			<trans-unit id="premature_start.description">
+				<source>prematureStart</source>
 			</trans-unit>
-			<trans-unit id="send_documents_allowed.description">
-				<source>sendDocumentsAllowed</source>
+			<trans-unit id="send_documents.description">
+				<source>sendDocuments</source>
+			</trans-unit>
+			<trans-unit id="bafa_support.description">
+				<source>bafaSupport</source>
 			</trans-unit>
 			<trans-unit id="support_programme.description">
 				<source>supportProgramme</source>

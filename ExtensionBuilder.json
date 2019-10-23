@@ -270,7 +270,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
-                            "propertyName": "revenue",
+                            "propertyName": "sales",
                             "propertyType": "String",
                             "uid": "615492187593"
                         },
@@ -280,7 +280,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
-                            "propertyName": "balanceSum",
+                            "propertyName": "balance",
                             "propertyType": "String",
                             "uid": "918673082758"
                         },
@@ -290,7 +290,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
-                            "propertyName": "numberOfEmployees",
+                            "propertyName": "employeesCount",
                             "propertyType": "Integer",
                             "uid": "109919400219"
                         },
@@ -300,7 +300,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
-                            "propertyName": "managerName",
+                            "propertyName": "manager",
                             "propertyType": "String",
                             "uid": "1125121012653"
                         },
@@ -310,7 +310,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
-                            "propertyName": "soleRepresentation",
+                            "propertyName": "singleRepresentative",
                             "propertyType": "Integer",
                             "uid": "1066433101640"
                         },
@@ -320,7 +320,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
-                            "propertyName": "deductionRight",
+                            "propertyName": "preTaxDeduction",
                             "propertyType": "Integer",
                             "uid": "1490975691997"
                         },
@@ -350,7 +350,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
-                            "propertyName": "principleBank",
+                            "propertyName": "principalBank",
                             "propertyType": "String",
                             "uid": "874745594935"
                         },
@@ -430,7 +430,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
-                            "propertyName": "startUpEmploymentStatusBefore",
+                            "propertyName": "preFoundationEmployment",
                             "propertyType": "Integer",
                             "uid": "264919865722"
                         },
@@ -440,7 +440,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
-                            "propertyName": "startUpIndependentWork",
+                            "propertyName": "preFoundationSelfEmployment",
                             "propertyType": "Integer",
                             "uid": "636576801420"
                         },
@@ -460,7 +460,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
-                            "propertyName": "consultingDateUpTo",
+                            "propertyName": "consultingDateTo",
                             "propertyType": "NativeDate",
                             "uid": "1080449441370"
                         },
@@ -470,7 +470,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
-                            "propertyName": "consultingDescription",
+                            "propertyName": "consultingContent",
                             "propertyType": "Text",
                             "uid": "255816792355"
                         },
@@ -570,7 +570,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
-                            "propertyName": "earlyStartDesired",
+                            "propertyName": "prematureStart",
                             "propertyType": "Integer",
                             "uid": "101417116506"
                         },
@@ -580,7 +580,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
-                            "propertyName": "sendDocumentsAllowed",
+                            "propertyName": "sendDocuments",
                             "propertyType": "Integer",
                             "uid": "1116716667394"
                         }

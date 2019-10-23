@@ -14,10 +14,10 @@
 
     <div class="v320-1">
         <div class="v320-1-of-2">
-            <label for="entireConsultationPhase">
-                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.entire_consultation_phase" extensionName="RkwManagementConsultancy" />
+            <label for="consultingDays">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_days" extensionName="RkwManagementConsultancy" />
             </label>
-            <f:form.select property="entireConsultationPhase" options="<rkwCalculation:possibleDays program='{supportProgramme}'/>" prependOptionValue="0" prependOptionLabel="{f:translate(key:'tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose')}" />
+            <f:form.select property="consultingDays" options="<rkwCalculation:possibleDays program='{supportProgramme}'/>" prependOptionValue="0" prependOptionLabel="{f:translate(key:'tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose')}" />
         </div>
     </div>
 
@@ -29,18 +29,18 @@
             <f:form.textfield property="consultingDateFrom" value="{supportRequest.consultingDateFrom->f:format.date()}" placeholder="DD.MM.YYYY" />
         </div>
         <div class="v320-2-of-2">
-            <label for="consultingDateUpTo">
-                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_up_to" extensionName="RkwManagementConsultancy" />
+            <label for="consultingDateTo">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_to" extensionName="RkwManagementConsultancy" />
             </label>
-            <f:form.textfield property="consultingDateUpTo" value="{supportRequest.consultingDateUpTo->f:format.date()}" placeholder="DD.MM.YYYY" />
+            <f:form.textfield property="consultingDateTo" value="{supportRequest.consultingDateTo->f:format.date()}" placeholder="DD.MM.YYYY" />
         </div>
     </div>
 
     <div class="v320-1">
-        <label for="consultingDescription">
-            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_description" extensionName="RkwManagementConsultancy" />
+        <label for="consultingContent">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_content" extensionName="RkwManagementConsultancy" />
         </label>
-        <f:form.textarea property="consultingDescription" cols="40" rows="5" />
+        <f:form.textarea property="consultingContent" cols="40" rows="5" />
     </div>
 
 </fieldset>
