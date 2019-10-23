@@ -65,6 +65,28 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $foundationDate = 0;
 
     /**
+     * citizenship
+     *
+     * @var string
+     */
+    protected $citizenship = '';
+
+    /**
+     * birthdate
+     *
+     * @var string
+     * @validate NotEmpty, \RKW\RkwManagementConsultancy\Validation\Validator\CustomDateValidator
+     */
+    protected $birthdate = 0;
+
+    /**
+     * sales
+     *
+     * @var string
+     */
+    protected $foundationLocation = '';
+
+    /**
      * sales
      *
      * @var string
@@ -116,6 +138,22 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 //     * @validate NotEmpty
      */
     protected $businessPurpose = '';
+
+    /**
+     * insolvencyProceedings
+     *
+     * @var int
+    //     * @validate NotEmpty
+     */
+    protected $insolvencyProceedings = 0;
+
+    /**
+     * chamber
+     *
+     * @var int
+    //     * @validate NotEmpty
+     */
+    protected $chamber = 0;
 
     /**
      * companyShares
@@ -191,14 +229,6 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @validate NotEmpty, EmailAddress
      */
     protected $contactPersonEmail = '';
-
-    /**
-     * startUpFoundationDate
-     *
-     * @var string
-//     * @validate NotEmpty, \RKW\RkwManagementConsultancy\Validation\Validator\CustomDateValidator
-     */
-    protected $startUpFoundationDate = 0;
 
     /**
      * preFoundationEmployment
@@ -313,7 +343,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * prematureStart
      *
      * @var int
-//     * @validate NotEmpty
+     * @ignorevalidate
      */
     protected $prematureStart = 0;
 
@@ -324,6 +354,14 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 //     * @validate NotEmpty
      */
     protected $sendDocuments = 0;
+
+    /**
+     * bafaSupport
+     *
+     * @var int
+     * @ignorevalidate
+     */
+    protected $bafaSupport = 0;
 
     /**
      * privacy
@@ -471,6 +509,69 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
+     * Returns the citizenship
+     *
+     * @return string $citizenship
+     */
+    public function getCitizenship()
+    {
+        return $this->citizenship;
+    }
+
+    /**
+     * Sets the citizenship
+     *
+     * @param string $citizenship
+     * @return void
+     */
+    public function setCitizenship($citizenship)
+    {
+        $this->citizenship = $citizenship;
+    }
+
+    /**
+     * Returns the birthdate
+     *
+     * @return \DateTime
+     */
+    public function getBirthdate()
+    {
+        return $this->birthdate;
+    }
+
+    /**
+     * Sets the birthdate
+     *
+     * @param \DateTime $birthdate
+     * @return void
+     */
+    public function setBirthdate($birthdate)
+    {
+        $this->birthdate = $birthdate;
+    }
+
+    /**
+     * Returns the foundationLocation
+     *
+     * @return string $foundationLocation
+     */
+    public function getFoundationLocation()
+    {
+        return $this->foundationLocation;
+    }
+
+    /**
+     * Sets the foundationLocation
+     *
+     * @param string $foundationLocation
+     * @return void
+     */
+    public function setFoundationLocation($foundationLocation)
+    {
+        $this->foundationLocation = $foundationLocation;
+    }
+
+    /**
      * Returns the sales
      *
      * @return string $sales
@@ -615,6 +716,48 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setBusinessPurpose($businessPurpose)
     {
         $this->businessPurpose = $businessPurpose;
+    }
+
+    /**
+     * Returns the insolvencyProceedings
+     *
+     * @return int $insolvencyProceedings
+     */
+    public function getInsolvencyProceedings()
+    {
+        return $this->insolvencyProceedings;
+    }
+
+    /**
+     * Sets the insolvencyProceedings
+     *
+     * @param int $insolvencyProceedings
+     * @return void
+     */
+    public function setInsolvencyProceedings($insolvencyProceedings)
+    {
+        $this->insolvencyProceedings = $insolvencyProceedings;
+    }
+
+    /**
+     * Returns the chamber
+     *
+     * @return int $chamber
+     */
+    public function getChamber()
+    {
+        return $this->chamber;
+    }
+
+    /**
+     * Sets the chamber
+     *
+     * @param int $chamber
+     * @return void
+     */
+    public function setChamber($chamber)
+    {
+        $this->chamber = $chamber;
     }
 
     /**
@@ -828,27 +971,6 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the startUpFoundationDate
-     *
-     * @return string $startUpFoundationDate
-     */
-    public function getStartUpFoundationDate()
-    {
-        return $this->startUpFoundationDate;
-    }
-
-    /**
-     * Sets the startUpFoundationDate
-     *
-     * @param string $startUpFoundationDate
-     * @return void
-     */
-    public function setStartUpFoundationDate($startUpFoundationDate)
-    {
-        $this->startUpFoundationDate = $startUpFoundationDate;
-    }
-
-    /**
      * Returns the preFoundationEmployment
      *
      * @return int $preFoundationEmployment
@@ -906,9 +1028,9 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param int $consultingDays
      * @return void
      */
-    public function setconsultingDays($preFoundationSelfEmployment)
+    public function setConsultingDays($consultingDays)
     {
-        $this->preFoundationSelfEmployment = $preFoundationSelfEmployment;
+        $this->consultingDays = $consultingDays;
     }
 
     /**
@@ -1206,6 +1328,27 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
+     * Returns the bafaSupport
+     *
+     * @return int $bafaSupport
+     */
+    public function getBafaSupport()
+    {
+        return $this->bafaSupport;
+    }
+
+    /**
+     * Sets the bafaSupport
+     *
+     * @param int $bafaSupport
+     * @return void
+     */
+    public function setBafaSupport($bafaSupport)
+    {
+        $this->bafaSupport = $bafaSupport;
+    }
+
+    /**
      * Returns the privacy
      *
      * @return int $privacy
@@ -1318,7 +1461,7 @@ class SupportRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function transformDates()
     {
         $this->foundationDate = $this->transformDate($this->foundationDate);
-        $this->startUpFoundationDate = $this->transformDate($this->startUpFoundationDate);
+        $this->birthdate = $this->transformDate($this->birthdate);
         $this->consultingDateFrom = $this->transformDate($this->consultingDateFrom);
         $this->consultingDateTo = $this->transformDate($this->consultingDateTo);
     }

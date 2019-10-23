@@ -63,6 +63,10 @@
                 <source>Birthdate</source>
                 <target>Geburtsdatum</target>
             </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_type">
+                <source>Company type</source>
+                <target>Rechtsform</target>
+            </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_location">
                 <source>Intended location of foundation</source>
                 <target>Geplanter Ort der Gründung</target>
@@ -113,7 +117,15 @@
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.insolvency_proceedings">
                 <source>Insolvency Proceedings</source>
-                <target>Insolvenzverfahren</target>
+                <target>Ist für das Unternehmen, einen der Gesellschafter oder Geschäftsführer ein Insolvenzverfahren anhängig oder eröffnet?</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.insolvency_proceedings.1">
+                <source>Yes</source>
+                <target>Ja</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.insolvency_proceedings.99">
+                <source>No</source>
+                <target>Nein</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.chamber">
                 <source>Chamber</source>
@@ -179,13 +191,17 @@
                 <source>Employed</source>
                 <target>angestellt</target>
             </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.self_employed">
+                <source>Self-employed</source>
+                <target>selbstständig</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.in_education">
+                <source>In education</source>
+                <target>in Ausbildung/im Studium</target>
+            </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.unemployed">
                 <source>Unemployed</source>
                 <target>arbeitslos</target>
-            </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.freelancer">
-                <source>Freelancer</source>
-                <target>Selbstständig</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment">
                 <source>Start Up Independent Work</source>
@@ -195,17 +211,21 @@
                 <source>No</source>
                 <target>Nein</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.sideline">
-                <source>Sideline</source>
-                <target>Ja - im Nebenerwerb</target>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.part_time">
+                <source>Part-time</source>
+                <target>Ja, im Nebenerwerb</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.mainOccupation">
-                <source>Main Occupation</source>
-                <target>Ja - im Haupterwerb</target>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.full_time">
+                <source>Full-time</source>
+                <target>Ja, im Vollerwerb</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.shareholder">
+                <source>Shareholder</source>
+                <target>Ja, Anteile an bestehenden Unternehmen</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_days">
-                <source>Entire Consultation Phase</source>
-                <target>Beratungsdauer (Tagwerke á 8h)</target>
+                <source>Intended consulting days</source>
+                <target>geplante Anzahl Tagwerke</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consulting_date_from">
                 <source>Consulting Date From</source>
@@ -311,10 +331,6 @@
                 <source>Consulting</source>
                 <target>Beratung</target>
             </trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.company_type">
-				<source>Company type</source>
-				<target>Rechtsform</target>
-			</trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.privacy">
                 <source>Privacy</source>
                 <target>Datenschutz</target>
@@ -411,8 +427,6 @@
                 <target>AGB.</target>
             </trans-unit>
 
-
-
             <!-- PARTIAL: Form errors -->
             <trans-unit id="form.error.1221560718">
                 <source>Please fill out the field '%s'.</source>
@@ -434,7 +448,6 @@
             <trans-unit id="form.error.newSupportRequest.zip">
                 <source>Zip</source>
                 <target>PLZ</target>
-
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.city">
                 <source>City</source>
@@ -443,6 +456,18 @@
             <trans-unit id="form.error.newSupportRequest.foundationDate">
                 <source>Foundation Date</source>
                 <target>Gründungsdatum</target>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.citizenship">
+                <source>Citizenship</source>
+                <target>Staatsangehörigkeit</target>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.birthdate">
+                <source>Birthdate</source>
+                <target>Geburtsdatum</target>
+            </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.companyType">
+                <source>Company type</source>
+                <target>Rechtsform</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.sales">
                 <source>Sales</source>
@@ -525,8 +550,8 @@
                 <target>StartUp: Selbstständige Arbeit</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.consultingDays">
-                <source>Entire Consultation Phase</source>
-                <target>Beratungsdauer</target>
+                <source>Intended consulting days</source>
+                <target>geplante Anzahl Tagwerke</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.consultingDateFrom">
                 <source>Consulting Date From</source>
@@ -584,6 +609,10 @@
                 <source>Send Documents Allowed</source>
                 <target>Wie möchten Sie ihre Unterlagen erhalten?</target>
             </trans-unit>
+            <trans-unit id="form.error.newSupportRequest.bafaSupport">
+                <source>Already received BAFA support?</source>
+                <target>Haben Sie bereits BAFA-Förderung erhalten?</target>
+            </trans-unit>
             <trans-unit id="form.error.newSupportRequest.supportProgramme">
                 <source>Support Programme</source>
                 <target>Förderprogramm</target>
@@ -591,10 +620,6 @@
             <trans-unit id="form.error.newSupportRequest.consulting">
                 <source>Consulting</source>
                 <target>Beratung</target>
-            </trans-unit>
-            <trans-unit id="form.error.newSupportRequest.companyType">
-                <source>Company type</source>
-                <target>Rechtsform</target>
             </trans-unit>
             <trans-unit id="form.error.newSupportRequest.privacy">
                 <source>Privacy</source>

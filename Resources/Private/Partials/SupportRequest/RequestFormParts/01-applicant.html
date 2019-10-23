@@ -107,6 +107,32 @@
 
     <div class="v320-1">
         <div class="v320-1-of-2">
+            <label for="citizenship">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.citizenship" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="citizenship" />
+        </div>
+        <div class="v320-2-of-2">
+            <label for="birthdate">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.birthdate" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="birthdate" id="birthdate" value="{supportRequest.birthdate->f:format.date()}" placeholder="DD.MM.YYYY"/>
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
+            <label for="foundationLocation">
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.foundation_location" extensionName="RkwManagementConsultancy" />
+            </label>
+            <f:form.textfield property="foundationLocation" />
+        </div>
+        <div class="v320-2-of-2">
+        </div>
+    </div>
+
+    <div class="v320-1">
+        <div class="v320-1-of-2">
             <label for="balance">
                 <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.balance" extensionName="RkwManagementConsultancy" />
             </label>
@@ -143,13 +169,13 @@
             </label>
             <span class="radio">
                 <label>
-                     <f:form.radio name="singleRepresentative" value="1" checked="checked" />
+                     <f:form.radio property="singleRepresentative" value="1" checked="checked" />
                     &nbsp;<f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.single_representative.1" extensionName="RkwManagementConsultancy" />
                 </label>
             </span>
             <span class="radio">
                 <label>
-                    <f:form.radio name="singleRepresentative" value="99" />
+                    <f:form.radio property="singleRepresentative" value="99" />
                     <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.single_representative.99" extensionName="RkwManagementConsultancy" />
                 </label>
             </span>
@@ -160,13 +186,13 @@
             </label>
             <span class="radio">
                 <label>
-                     <f:form.radio name="preTaxDeduction" value="1" checked="checked" />
+                     <f:form.radio property="preTaxDeduction" value="1" checked="checked" />
                     &nbsp;<f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_tax_deduction.1" extensionName="RkwManagementConsultancy" />
                 </label>
             </span>
             <span class="radio">
                 <label>
-                    <f:form.radio name="preTaxDeduction" value="99" />
+                    <f:form.radio property="preTaxDeduction" value="99" />
                     <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_tax_deduction.99" extensionName="RkwManagementConsultancy" />
                 </label>
             </span>
@@ -178,6 +204,31 @@
             <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.business_purpose" extensionName="RkwManagementConsultancy" />
         </label>
         <f:form.textfield property="businessPurpose" />
+    </div>
+
+    <div class="v320-1">
+        <label for="insolvencyProceedings">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.insolvency_proceedings" extensionName="RkwManagementConsultancy" />
+        </label>
+        <span class="radio">
+            <label>
+                 <f:form.radio property="insolvencyProceedings" value="1" checked="checked" />
+                &nbsp;<f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.insolvency_proceedings.1" extensionName="RkwManagementConsultancy" />
+            </label>
+        </span>
+        <span class="radio">
+            <label>
+                <f:form.radio property="insolvencyProceedings" value="99" />
+                <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.insolvency_proceedings.99" extensionName="RkwManagementConsultancy" />
+            </label>
+        </span>
+    </div>
+
+    <div class="v320-1">
+        <label for="chamber">
+            <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.chamber" extensionName="RkwManagementConsultancy" />
+        </label>
+        <f:form.select property="chamber" options="{1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.chamber.1\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.chamber.2\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.chamber.3\", extensionName:\"RkwManagementConsultancy\")}'}" prependOptionValue="0" prependOptionLabel="{f:translate(key:'tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose')}" />
     </div>
 
     <div class="v320-1">
@@ -259,30 +310,13 @@
             <label for="preFoundationEmployment">
                 <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment" extensionName="RkwManagementConsultancy" />
             </label>
-            <f:form.select property="preFoundationEmployment" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.employed\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.unemployed\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.freelancer\", extensionName:\"RkwManagementConsultancy\")}'}" />
+            <f:form.select property="preFoundationEmployment" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.employed\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.self_employed\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.in_education\", extensionName:\"RkwManagementConsultancy\")}', 4: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.unemployed\", extensionName:\"RkwManagementConsultancy\")}'}" />
         </div>
         <div class="v320-2-of-2">
             <label for="preFoundationSelfEmployment">
                 <f:translate key="tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment" extensionName="RkwManagementConsultancy" />
             </label>
-            <f:form.select property="preFoundationSelfEmployment" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.no\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.sideline\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.mainOccupation\", extensionName:\"RkwManagementConsultancy\")}'}" />
+            <f:form.select property="preFoundationSelfEmployment" options="{0: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose\", extensionName:\"RkwManagementConsultancy\")}', 1: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.no\", extensionName:\"RkwManagementConsultancy\")}', 2: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.part_time\", extensionName:\"RkwManagementConsultancy\")}', 3: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.full_time\", extensionName:\"RkwManagementConsultancy\")}', 4: '{f:translate(key:\"tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.shareholder\", extensionName:\"RkwManagementConsultancy\")}'}" />
         </div>
     </div>
 </fieldset>
-
-<script>
-    toggleStartUp(document.querySelector('.is-start-up-trigger'));
-
-    function toggleStartUp(checkbox){
-        if (checkbox.checked) {
-            document.querySelector('div.is-start-up').style.display = 'block';
-        } else {
-            document.querySelector('div.is-start-up').style.display = 'none';
-        }
-    }
-</script>
-<style>
-    .is-start-up {
-        display: none;
-    }
-</style>

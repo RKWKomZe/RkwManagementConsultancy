@@ -378,7 +378,7 @@ return [
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.employed', 1],
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.unemployed', 2],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.freelancer', 3],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_employment.self_employed', 3],
                 ]
 			]
 	    ],
@@ -392,8 +392,9 @@ return [
                 'items' => [
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.general.pleaseChoose', 0],
                     ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.no', 1],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.sideline', 2],
-                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.mainOccupation', 3],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.part_time', 2],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.full_time', 3],
+                    ['LLL:EXT:rkw_management_consultancy/Resources/Private/Language/locallang_db.xlf:tx_rkwmanagementconsultancy_domain_model_supportrequest.pre_foundation_self_employment.shareholder', 4],
                 ]
 			]
 	    ],
