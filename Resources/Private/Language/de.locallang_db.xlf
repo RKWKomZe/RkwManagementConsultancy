@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-07-22T10:58:48Z" product-name="rkw_management_consultancy">
-		<header/>
+	<file source-language="en" datatype="plaintext" original="messages" target-language="de-DE" date="2019-07-22T10:58:48Z" product-name="rkw_management_consultancy">
+		<header>
+      <phase-group>
+        <phase process-name="approval" phase-name="approval-1" contact-email="berberich@rkw.de" contact-name="Melanie" tool-id="lokalize-22.03.70" date="2022-02-18"/>
+      </phase-group>
+      <tool tool-id="lokalize-22.03.70" tool-name="Lokalize" tool-version="22.03.70"/>
+    </header>
 		<body>
 			<trans-unit id="tx_rkw_management_consultancy_domain_model_request">
 				<source>RKW Management Consulting: Form</source>
@@ -23,9 +28,10 @@
                 <source>Type of consultation</source>
                 <target>Art der Beratung</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.consultant">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.consultant" approved="no">
                 <source>Consultant</source>
-                <target>Berater</target>
+                <target state="final" phase-name="approval-1">Berater / Beraterin
+</target>
             </trans-unit>
             <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.tab.misc">
                 <source>Misc</source>
@@ -75,13 +81,13 @@
 				<source>Balance Sum</source>
 				<target>Bilanzsumme T€</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.number_of_employees">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.number_of_employees" approved="no">
 				<source>Number Of Employees</source>
-				<target>Mitarbeiterzahl</target>
+				<target state="final" phase-name="approval-1">Mitarbeitendenzahl</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.manager_name">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.manager_name" approved="no">
 				<source>Manager Name</source>
-				<target>Geschäftsführer / Inhaber</target>
+				<target state="final" phase-name="approval-1">Inhaber / Inhaberin</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.sole_representation">
 				<source>Sole Representation</source>
@@ -127,13 +133,13 @@
 				<source>IBAN</source>
 				<target>IBAN</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_last_name">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_last_name" approved="no">
 				<source>Contact Person Last Name</source>
-				<target>Ansprechpartner für RKW (Nachname)</target>
+				<target state="final" phase-name="approval-1">Ansprechperson für RKW (Nachname)</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_first_name">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_first_name" approved="no">
 				<source>Contact Person First Name</source>
-				<target>Ansprechpartner für RKW (Vorname)</target>
+				<target state="final" phase-name="approval-1">Ansprechperson für RKW (Vorname)</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.contact_person_phone">
 				<source>Contact Person Phone</source>
@@ -207,37 +213,37 @@
 				<source>Consultant Type</source>
 				<target>Beraterauswahl</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.1">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.1" approved="no">
                 <source>I need a RKW recommendation</source>
-                <target>Ich wünsche eine Berater-Empfehlung aus dem RKW-Beraterpool.</target>
+                <target state="final" phase-name="approval-1">Ich wünsche eine Beratenden-Empfehlung aus dem RKW-Beratendenpool.</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.2">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.2" approved="no">
                 <source>I've decided for a special onsultant</source>
-                <target>Ich habe mich bereits für einen akkreditierten Berater entschieden.</target>
+                <target state="final" phase-name="approval-1">Ich habe mich bereits für einen akkreditierten Beratenden entschieden.</target>
             </trans-unit>
-            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.3">
+            <trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_type.3" approved="no">
                 <source>I've NOT decided for a special consultant</source>
-                <target>Ich habe mich bereits für einen NOCH NICHT akkreditierten Berater entschieden.</target>
+                <target state="final" phase-name="approval-1">Ich habe mich bereits für einen NOCH NICHT akkreditierten Beratenden entschieden.</target>
             </trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_company">
 				<source>Consultant Company</source>
 				<target>Beratungsfirma</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_name1">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_name1" approved="no">
 				<source>Consultant Name1</source>
-				<target>Berater (Name, Vorname)</target>
+				<target state="final" phase-name="approval-1">Berater / Beraterin (Name, Vorname)</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_name2">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_name2" approved="no">
 				<source>Consultant Name2</source>
-				<target>2. Berater (Name, Vorname)</target>
+				<target state="final" phase-name="approval-1">2. Berater / Beraterin (Name, Vorname)</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant1_accreditation_number">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant1_accreditation_number" approved="no">
 				<source>Consultant1 Accreditation Number</source>
-				<target>Akkr-Nr. (Berater)</target>
+				<target state="final" phase-name="approval-1">Akkr-Nr. (Berater / Beraterin)</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant2_accreditation_number">
+			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant2_accreditation_number" approved="no">
 				<source>Consultant2 Accreditation Number</source>
-				<target>Akkr-Nr. (2. Berater)</target>
+				<target state="final" phase-name="approval-1">Akkr-Nr. (2. Berater / Beraterin)</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwmanagementconsultancy_domain_model_supportrequest.consultant_fee">
 				<source>Consultant Fee</source>
